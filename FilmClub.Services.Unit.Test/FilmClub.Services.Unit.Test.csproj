@@ -24,7 +24,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Genre\" />
+    <ProjectReference Include="..\FilmClub.Test.Tools\FilmClub.Test.Tools.csproj" />
   </ItemGroup>
 
 </Project>

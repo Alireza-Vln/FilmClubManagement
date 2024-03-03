@@ -1,11 +1,46 @@
 {
   "version": 3,
   "targets": {
-    "net7.0": {}
+    "net7.0": {
+      "FilmClub.Cantracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/FilmClub.Cantracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FilmClub.Cantracts.dll": {}
+        }
+      },
+      "FilmClub.Entities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/FilmClub.Entities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FilmClub.Entities.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "FilmClub.Cantracts/1.0.0": {
+      "type": "project",
+      "path": "../FilmClub.Cantracts/FilmClub.Cantracts.csproj",
+      "msbuildProject": "../FilmClub.Cantracts/FilmClub.Cantracts.csproj"
+    },
+    "FilmClub.Entities/1.0.0": {
+      "type": "project",
+      "path": "../FilmClub.Entities/FilmClub.Entities.csproj",
+      "msbuildProject": "../FilmClub.Entities/FilmClub.Entities.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net7.0": []
+    "net7.0": [
+      "FilmClub.Cantracts >= 1.0.0",
+      "FilmClub.Entities >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\welldone\\.nuget\\packages\\": {}
@@ -33,7 +68,14 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Cantracts\\FilmClub.Cantracts.csproj": {
+              "projectPath": "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Cantracts\\FilmClub.Cantracts.csproj"
+            },
+            "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Entities\\FilmClub.Entities.csproj": {
+              "projectPath": "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Entities\\FilmClub.Entities.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

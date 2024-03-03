@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "cMuxk4zo9rd/80IKoGP7dLAAC6v/uM+pe7C1Wvm8PuE=",
+  "Source": "FilmClub.RestApi",
+  "BasePath": "_content/FilmClub.RestApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

@@ -4,10 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FilmClub.Cantracts
+namespace FilmClub.Contracts
 {
-    public interface UnitOfWork
+   public interface UnitOfWork
     {
-
+        Task Begin();
+        Task Commit();
+        Task Complete();
+        Task RollBack();
     }
 }

@@ -1,0 +1,47 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "FilmClub.Services/1.0.0": {
+        "dependencies": {
+          "FilmClub.Cantracts": "1.0.0",
+          "FilmClub.Entities": "1.0.0"
+        },
+        "runtime": {
+          "FilmClub.Services.dll": {}
+        }
+      },
+      "FilmClub.Cantracts/1.0.0": {
+        "runtime": {
+          "FilmClub.Cantracts.dll": {}
+        }
+      },
+      "FilmClub.Entities/1.0.0": {
+        "runtime": {
+          "FilmClub.Entities.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "FilmClub.Services/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FilmClub.Cantracts/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FilmClub.Entities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

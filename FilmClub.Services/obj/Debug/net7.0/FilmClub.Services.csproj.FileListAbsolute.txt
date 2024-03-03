@@ -1,0 +1,17 @@
+C:\Users\welldone\Desktop\Alireza\FilmClubManagement\FilmClub.Services\obj\Debug\net7.0\FilmClub.Services.csproj.AssemblyReference.cache
+C:\Users\welldone\Desktop\Alireza\FilmClubManagement\FilmClub.Services\obj\Debug\net7.0\FilmClub.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\welldone\Desktop\Alireza\FilmClubManagement\FilmClub.Services\obj\Debug\net7.0\FilmClub.Services.AssemblyInfoInputs.cache
+C:\Users\welldone\Desktop\Alireza\FilmClubManagement\FilmClub.Services\obj\Debug\net7.0\FilmClub.Services.AssemblyInfo.cs
+C:\Users\welldone\Desktop\Alireza\FilmClubManagement\FilmClub.Services\obj\Debug\net7.0\FilmClub.Services.csproj.CoreCompileInputs.cache
+C:\Users\welldone\Desktop\Alireza\FilmClubManagement\FilmClub.Services\bin\Debug\net7.0\FilmClub.Services.deps.json
+C:\Users\welldone\Desktop\Alireza\FilmClubManagement\FilmClub.Services\bin\Debug\net7.0\FilmClub.Services.dll
+C:\Users\welldone\Desktop\Alireza\FilmClubManagement\FilmClub.Services\bin\Debug\net7.0\FilmClub.Services.pdb
+C:\Users\welldone\Desktop\Alireza\FilmClubManagement\FilmClub.Services\bin\Debug\net7.0\FilmClub.Cantracts.dll
+C:\Users\welldone\Desktop\Alireza\FilmClubManagement\FilmClub.Services\bin\Debug\net7.0\FilmClub.Entities.dll
+C:\Users\welldone\Desktop\Alireza\FilmClubManagement\FilmClub.Services\bin\Debug\net7.0\FilmClub.Cantracts.pdb
+C:\Users\welldone\Desktop\Alireza\FilmClubManagement\FilmClub.Services\bin\Debug\net7.0\FilmClub.Entities.pdb
+C:\Users\welldone\Desktop\Alireza\FilmClubManagement\FilmClub.Services\obj\Debug\net7.0\FilmClub.Services.csproj.CopyComplete
+C:\Users\welldone\Desktop\Alireza\FilmClubManagement\FilmClub.Services\obj\Debug\net7.0\FilmClub.Services.dll
+C:\Users\welldone\Desktop\Alireza\FilmClubManagement\FilmClub.Services\obj\Debug\net7.0\refint\FilmClub.Services.dll
+C:\Users\welldone\Desktop\Alireza\FilmClubManagement\FilmClub.Services\obj\Debug\net7.0\FilmClub.Services.pdb
+C:\Users\welldone\Desktop\Alireza\FilmClubManagement\FilmClub.Services\obj\Debug\net7.0\ref\FilmClub.Services.dll
