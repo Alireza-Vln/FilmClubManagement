@@ -1,13 +1,15 @@
-﻿namespace FilmClub.Services.Unit.Test.GenresTest
+﻿using FilmClub.Services.Genres.Cantracts.Dtos;
+
+namespace FilmClub.Test.Tools.Genres.Factories
 {
     public static class GenreFilterDtoFactory
     {
-       public static GenreFilterDto Create(string? title=null)
+        public static GenreFilterDto Create(string? title = null)
         {
-            return  new GenreFilterDto
+            return new GenreFilterDto
             {
-                Title = title?? "dummy-title",
+                Title = title ?? "dummy-title",
             };
         }
-}
+    }
 }

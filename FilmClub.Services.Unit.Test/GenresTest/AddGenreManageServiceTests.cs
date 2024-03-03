@@ -1,6 +1,10 @@
-﻿using FluentAssertions;
+﻿using FilmClub.Services.Genres.Cantracts;
+using FilmClub.Test.Tools.Genres.Factories;
+using FilmClub.Test.Tools.Infrastructure.DatabaseConfig.Unit;
+using FilmClubManagement.Persistance.EF;
+using FluentAssertions;
 
-namespace FilmClub.Services.Unit.Test.Genres
+namespace FilmClub.Services.Unit.Test.GenresTest
 {
     public class AddGenreManageServiceTests
     {
@@ -17,17 +21,16 @@ namespace FilmClub.Services.Unit.Test.Genres
         }
 
 
-
         [Fact]
         public async Task Add_adds_genre_by_Manage_properly()
         {
             var dto = AddGenreManagementDtoFactory.Create();
-           
-          await _sut.Add(dto);
+
+            await _sut.Add(dto);
 
             var actual = _readContext.Genres.Single();
             actual.Title.Should().Be(dto.Title);
         }
-      
+
     }
 }

@@ -1,8 +1,8 @@
-﻿namespace FilmClub.Services.Unit.Test.Genres
+﻿namespace FilmClub.Services.Genres.Cantracts.Dtos
 {
     public class AddGenreManageDto
     {
         public string Title { get; set; }
-       
+
     }
 }

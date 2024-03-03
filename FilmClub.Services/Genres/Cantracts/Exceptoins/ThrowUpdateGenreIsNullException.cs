@@ -1,4 +1,4 @@
-﻿namespace FilmClub.Services.Unit.Test.GenresTest
+﻿namespace FilmClub.Services.Genres.Cantracts.Exceptoins
 {
     public class ThrowUpdateGenreIsNullException : Exception
     {

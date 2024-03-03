@@ -1,45 +1,45 @@
 {
   "version": 3,
   "targets": {
-    "net7.0": {
-      "FilmClub.Cantracts/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v7.0",
-        "compile": {
-          "bin/placeholder/FilmClub.Cantracts.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/FilmClub.Cantracts.dll": {}
-        }
-      },
+    "net6.0": {
       "FilmClub.Entities/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v7.0",
+        "framework": ".NETCoreApp,Version=v6.0",
         "compile": {
           "bin/placeholder/FilmClub.Entities.dll": {}
         },
         "runtime": {
           "bin/placeholder/FilmClub.Entities.dll": {}
+        }
+      },
+      "FilmClubs.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/FilmClubs.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FilmClubs.Contracts.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "FilmClub.Cantracts/1.0.0": {
-      "type": "project",
-      "path": "../FilmClub.Cantracts/FilmClub.Cantracts.csproj",
-      "msbuildProject": "../FilmClub.Cantracts/FilmClub.Cantracts.csproj"
-    },
     "FilmClub.Entities/1.0.0": {
       "type": "project",
       "path": "../FilmClub.Entities/FilmClub.Entities.csproj",
       "msbuildProject": "../FilmClub.Entities/FilmClub.Entities.csproj"
+    },
+    "FilmClubs.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../FilmClub.Cantracts/FilmClubs.Contracts.csproj",
+      "msbuildProject": "../FilmClub.Cantracts/FilmClubs.Contracts.csproj"
     }
   },
   "projectFileDependencyGroups": {
-    "net7.0": [
-      "FilmClub.Cantracts >= 1.0.0",
-      "FilmClub.Entities >= 1.0.0"
+    "net6.0": [
+      "FilmClub.Entities >= 1.0.0",
+      "FilmClubs.Contracts >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -59,18 +59,18 @@
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net7.0"
+        "net6.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Cantracts\\FilmClub.Cantracts.csproj": {
-              "projectPath": "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Cantracts\\FilmClub.Cantracts.csproj"
+            "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Cantracts\\FilmClubs.Contracts.csproj": {
+              "projectPath": "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Cantracts\\FilmClubs.Contracts.csproj"
             },
             "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Entities\\FilmClub.Entities.csproj": {
               "projectPath": "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Entities\\FilmClub.Entities.csproj"
@@ -85,8 +85,8 @@
       }
     },
     "frameworks": {
-      "net7.0": {
-        "targetAlias": "net7.0",
+      "net6.0": {
+        "targetAlias": "net6.0",
         "imports": [
           "net461",
           "net462",
@@ -98,6 +98,20 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[6.0.22, 6.0.22]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[6.0.22, 6.0.22]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[6.0.22, 6.0.22]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"

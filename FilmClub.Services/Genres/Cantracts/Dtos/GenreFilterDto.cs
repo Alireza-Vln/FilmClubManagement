@@ -1,4 +1,4 @@
-﻿namespace FilmClub.Services.Unit.Test.GenresTest
+﻿namespace FilmClub.Services.Genres.Cantracts.Dtos
 {
     public class GenreFilterDto
     {

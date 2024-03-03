@@ -1,4 +1,4 @@
-﻿using FilmClub.Services.Genres;
+﻿using FilmClub.Entities.Genres;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using System;
@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FilmClub.Persistence.EF.Genres
+namespace DoctorAppointment.Persistance.EF.Genres
 {
     public class GenreEntityMap : IEntityTypeConfiguration<Genre>
     {

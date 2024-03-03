@@ -1,14 +1,14 @@
-﻿using FilmClub.Contracts;
+﻿using FilmClubs.Contracts;
 
-namespace FilmClub.Services.Unit.Test.Genres
+namespace FilmClubManagement.Persistance.EF
 {
-    public class EFUnitOfWork: UnitOfWork
+    public class EFUnitOfWork : UnitOfWork
     {
         private readonly EFDataContext _context;
 
         public EFUnitOfWork(EFDataContext context)
         {
-            _context= context;
+            _context = context;
         }
         public async Task Begin()
         {

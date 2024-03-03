@@ -1,4 +1,6 @@
-﻿namespace FilmClub.Services.Unit.Test.FilmsTest
+﻿using FilmClub.Services.Films.Contracts.Dtos;
+
+namespace FilmClub.Services.Films.Contracts
 {
     public interface FilmService
     {

@@ -1,6 +1,6 @@
 ﻿using FilmClub.Entities.Films;
 
-namespace FilmClub.Services.Genres
+namespace FilmClub.Entities.Genres
 {
     public class Genre
     {

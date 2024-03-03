@@ -4,12 +4,12 @@
     "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Services.Unit.Test\\FilmClub.Services.Unit.Test.csproj": {}
   },
   "projects": {
-    "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Cantracts\\FilmClub.Cantracts.csproj": {
+    "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Cantracts\\FilmClubs.Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Cantracts\\FilmClub.Cantracts.csproj",
-        "projectName": "FilmClub.Cantracts",
-        "projectPath": "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Cantracts\\FilmClub.Cantracts.csproj",
+        "projectUniqueName": "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Cantracts\\FilmClubs.Contracts.csproj",
+        "projectName": "FilmClubs.Contracts",
+        "projectPath": "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Cantracts\\FilmClubs.Contracts.csproj",
         "packagesPath": "C:\\Users\\welldone\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Cantracts\\obj\\",
         "projectStyle": "PackageReference",
@@ -18,15 +18,15 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net7.0"
+          "net6.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net7.0": {
-            "targetAlias": "net7.0",
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {}
           }
         },
@@ -37,8 +37,8 @@
         }
       },
       "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "imports": [
             "net461",
             "net462",
@@ -50,6 +50,20 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.22, 6.0.22]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.22, 6.0.22]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.22, 6.0.22]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -73,15 +87,15 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net7.0"
+          "net6.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net7.0": {
-            "targetAlias": "net7.0",
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {}
           }
         },
@@ -92,8 +106,8 @@
         }
       },
       "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "imports": [
             "net461",
             "net462",
@@ -105,6 +119,20 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.22, 6.0.22]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.22, 6.0.22]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.22, 6.0.22]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -128,18 +156,18 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net7.0"
+          "net6.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net7.0": {
-            "targetAlias": "net7.0",
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Entities\\FilmClub.Entities.csproj": {
-                "projectPath": "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Entities\\FilmClub.Entities.csproj"
+              "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Cantracts\\FilmClubs.Contracts.csproj": {
+                "projectPath": "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Cantracts\\FilmClubs.Contracts.csproj"
               },
               "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Services\\FilmClub.Services.csproj": {
                 "projectPath": "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Services\\FilmClub.Services.csproj"
@@ -154,20 +182,14 @@
         }
       },
       "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "dependencies": {
-            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+            "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.27, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
-              "target": "Package",
-              "version": "[6.0.27, )"
-            },
-            "Microsoft.EntityFrameworkCore.Tools": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
               "target": "Package",
               "version": "[6.0.27, )"
             }
@@ -183,6 +205,20 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.22, 6.0.22]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.22, 6.0.22]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.22, 6.0.22]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -206,16 +242,22 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net7.0"
+          "net6.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net7.0": {
-            "targetAlias": "net7.0",
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {
+              "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Cantracts\\FilmClubs.Contracts.csproj": {
+                "projectPath": "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Cantracts\\FilmClubs.Contracts.csproj"
+              },
+              "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Persistence.EF\\FilmClub.Persistence.EF.csproj": {
+                "projectPath": "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Persistence.EF\\FilmClub.Persistence.EF.csproj"
+              },
               "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Test.Tools\\FilmClub.Test.Tools.csproj": {
                 "projectPath": "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Test.Tools\\FilmClub.Test.Tools.csproj"
               }
@@ -229,8 +271,8 @@
         }
       },
       "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "dependencies": {
             "FluentAssertions": {
               "target": "Package",
@@ -238,13 +280,13 @@
             },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
-              "version": "[17.7.1, )"
+              "version": "[17.6.0, )"
             },
             "coverlet.collector": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[3.2.0, )"
+              "version": "[6.0.0, )"
             },
             "xunit": {
               "target": "Package",
@@ -268,6 +310,20 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.22, 6.0.22]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.22, 6.0.22]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.22, 6.0.22]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -291,18 +347,18 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net7.0"
+          "net6.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net7.0": {
-            "targetAlias": "net7.0",
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Cantracts\\FilmClub.Cantracts.csproj": {
-                "projectPath": "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Cantracts\\FilmClub.Cantracts.csproj"
+              "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Cantracts\\FilmClubs.Contracts.csproj": {
+                "projectPath": "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Cantracts\\FilmClubs.Contracts.csproj"
               },
               "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Entities\\FilmClub.Entities.csproj": {
                 "projectPath": "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Entities\\FilmClub.Entities.csproj"
@@ -317,8 +373,8 @@
         }
       },
       "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "imports": [
             "net461",
             "net462",
@@ -330,6 +386,20 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.22, 6.0.22]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.22, 6.0.22]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.22, 6.0.22]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -353,16 +423,19 @@
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net7.0"
+          "net6.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net7.0": {
-            "targetAlias": "net7.0",
+          "net6.0": {
+            "targetAlias": "net6.0",
             "projectReferences": {
+              "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Cantracts\\FilmClubs.Contracts.csproj": {
+                "projectPath": "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Cantracts\\FilmClubs.Contracts.csproj"
+              },
               "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Persistence.EF\\FilmClub.Persistence.EF.csproj": {
                 "projectPath": "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Persistence.EF\\FilmClub.Persistence.EF.csproj"
               },
@@ -379,16 +452,24 @@
         }
       },
       "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "dependencies": {
             "Microsoft.Data.Sqlite.Core": {
+              "target": "Package",
+              "version": "[6.0.27, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
               "version": "[6.0.27, )"
             },
             "Microsoft.EntityFrameworkCore.Sqlite.Core": {
               "target": "Package",
               "version": "[6.0.27, )"
+            },
+            "SQLitePCLRaw.provider.e_sqlite3": {
+              "target": "Package",
+              "version": "[2.1.8, )"
             }
           },
           "imports": [
@@ -402,6 +483,20 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.22, 6.0.22]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.22, 6.0.22]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.22, 6.0.22]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"

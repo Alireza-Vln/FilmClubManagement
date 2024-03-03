@@ -15,7 +15,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02.Infrastructure", "02.Inf
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03.Peresntation", "03.Peresntation", "{D6E542C7-8420-4BC4-A8E6-191F826FA649}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilmClub.Cantracts", "FilmClub.Cantracts\FilmClub.Cantracts.csproj", "{E648EE55-3B1B-44CC-9ED6-7CC95741608A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilmClubs.Contracts", "FilmClub.Cantracts\FilmClubs.Contracts.csproj", "{E648EE55-3B1B-44CC-9ED6-7CC95741608A}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilmClub.Entities", "FilmClub.Entities\FilmClub.Entities.csproj", "{7BEEA833-E6BA-4BB7-B59C-1BE0C92254C8}"
 EndProject

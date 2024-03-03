@@ -1,6 +1,6 @@
 ﻿using FilmClub.Entities.Films;
 
-namespace FilmClub.Services.Unit.Test.FilmsTest
+namespace FilmClub.Services.Films.Contracts
 {
     public interface FilmRepository
     {

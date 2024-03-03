@@ -1,12 +1,9 @@
 {
   "version": 2,
-  "dgSpecHash": "QHtpVbuqLg/iVUrHy75AL4AImEmIgRxmVsEkcdy7gyXVR5bTu534tJFLOxfwqT3NmVOHEXRCLLr4Db5K6bwp5A==",
+  "dgSpecHash": "I65G7/iQlIApd5OLLBX3KukHnA5lOUHln/yCrp+NiKV7fG87kTt1jpDFR9Z8a8VnyNWD7HF+iI+jatSHIZpeQQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Test.Tools\\FilmClub.Test.Tools.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\welldone\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.27\\microsoft.aspnetcore.cryptography.internal.6.0.27.nupkg.sha512",
-    "C:\\Users\\welldone\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\6.0.27\\microsoft.aspnetcore.cryptography.keyderivation.6.0.27.nupkg.sha512",
-    "C:\\Users\\welldone\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\6.0.27\\microsoft.aspnetcore.identity.entityframeworkcore.6.0.27.nupkg.sha512",
     "C:\\Users\\welldone\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\welldone\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.7\\microsoft.data.sqlclient.2.1.7.nupkg.sha512",
     "C:\\Users\\welldone\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\2.1.1\\microsoft.data.sqlclient.sni.runtime.2.1.1.nupkg.sha512",
@@ -15,6 +12,7 @@
     "C:\\Users\\welldone\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.27\\microsoft.entityframeworkcore.abstractions.6.0.27.nupkg.sha512",
     "C:\\Users\\welldone\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.27\\microsoft.entityframeworkcore.analyzers.6.0.27.nupkg.sha512",
     "C:\\Users\\welldone\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\6.0.27\\microsoft.entityframeworkcore.relational.6.0.27.nupkg.sha512",
+    "C:\\Users\\welldone\\.nuget\\packages\\microsoft.entityframeworkcore.sqlite\\6.0.27\\microsoft.entityframeworkcore.sqlite.6.0.27.nupkg.sha512",
     "C:\\Users\\welldone\\.nuget\\packages\\microsoft.entityframeworkcore.sqlite.core\\6.0.27\\microsoft.entityframeworkcore.sqlite.core.6.0.27.nupkg.sha512",
     "C:\\Users\\welldone\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\6.0.27\\microsoft.entityframeworkcore.sqlserver.6.0.27.nupkg.sha512",
     "C:\\Users\\welldone\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\6.0.0\\microsoft.extensions.caching.abstractions.6.0.0.nupkg.sha512",
@@ -23,8 +21,6 @@
     "C:\\Users\\welldone\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\6.0.1\\microsoft.extensions.dependencyinjection.6.0.1.nupkg.sha512",
     "C:\\Users\\welldone\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\welldone\\.nuget\\packages\\microsoft.extensions.dependencymodel\\6.0.0\\microsoft.extensions.dependencymodel.6.0.0.nupkg.sha512",
-    "C:\\Users\\welldone\\.nuget\\packages\\microsoft.extensions.identity.core\\6.0.27\\microsoft.extensions.identity.core.6.0.27.nupkg.sha512",
-    "C:\\Users\\welldone\\.nuget\\packages\\microsoft.extensions.identity.stores\\6.0.27\\microsoft.extensions.identity.stores.6.0.27.nupkg.sha512",
     "C:\\Users\\welldone\\.nuget\\packages\\microsoft.extensions.logging\\6.0.0\\microsoft.extensions.logging.6.0.0.nupkg.sha512",
     "C:\\Users\\welldone\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\welldone\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
@@ -38,7 +34,10 @@
     "C:\\Users\\welldone\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\welldone\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\welldone\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
-    "C:\\Users\\welldone\\.nuget\\packages\\sqlitepclraw.core\\2.1.2\\sqlitepclraw.core.2.1.2.nupkg.sha512",
+    "C:\\Users\\welldone\\.nuget\\packages\\sqlitepclraw.bundle_e_sqlite3\\2.1.2\\sqlitepclraw.bundle_e_sqlite3.2.1.2.nupkg.sha512",
+    "C:\\Users\\welldone\\.nuget\\packages\\sqlitepclraw.core\\2.1.8\\sqlitepclraw.core.2.1.8.nupkg.sha512",
+    "C:\\Users\\welldone\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.1.2\\sqlitepclraw.lib.e_sqlite3.2.1.2.nupkg.sha512",
+    "C:\\Users\\welldone\\.nuget\\packages\\sqlitepclraw.provider.e_sqlite3\\2.1.8\\sqlitepclraw.provider.e_sqlite3.2.1.8.nupkg.sha512",
     "C:\\Users\\welldone\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\welldone\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",
     "C:\\Users\\welldone\\.nuget\\packages\\system.configuration.configurationmanager\\4.7.0\\system.configuration.configurationmanager.4.7.0.nupkg.sha512",
@@ -56,7 +55,10 @@
     "C:\\Users\\welldone\\.nuget\\packages\\system.text.encoding.codepages\\4.7.0\\system.text.encoding.codepages.4.7.0.nupkg.sha512",
     "C:\\Users\\welldone\\.nuget\\packages\\system.text.encodings.web\\6.0.0\\system.text.encodings.web.6.0.0.nupkg.sha512",
     "C:\\Users\\welldone\\.nuget\\packages\\system.text.json\\6.0.0\\system.text.json.6.0.0.nupkg.sha512",
-    "C:\\Users\\welldone\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512"
+    "C:\\Users\\welldone\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512",
+    "C:\\Users\\welldone\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.22\\microsoft.windowsdesktop.app.ref.6.0.22.nupkg.sha512",
+    "C:\\Users\\welldone\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.22\\microsoft.netcore.app.ref.6.0.22.nupkg.sha512",
+    "C:\\Users\\welldone\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.22\\microsoft.aspnetcore.app.ref.6.0.22.nupkg.sha512"
   ],
   "logs": []
 }

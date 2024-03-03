@@ -1,11 +1,11 @@
 {
   "version": 3,
   "targets": {
-    "net7.0": {}
+    "net6.0": {}
   },
   "libraries": {},
   "projectFileDependencyGroups": {
-    "net7.0": []
+    "net6.0": []
   },
   "packageFolders": {
     "C:\\Users\\welldone\\.nuget\\packages\\": {}
@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Cantracts\\FilmClub.Cantracts.csproj",
-      "projectName": "FilmClub.Cantracts",
-      "projectPath": "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Cantracts\\FilmClub.Cantracts.csproj",
+      "projectUniqueName": "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Cantracts\\FilmClubs.Contracts.csproj",
+      "projectName": "FilmClubs.Contracts",
+      "projectPath": "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Cantracts\\FilmClubs.Contracts.csproj",
       "packagesPath": "C:\\Users\\welldone\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Cantracts\\obj\\",
       "projectStyle": "PackageReference",
@@ -24,15 +24,15 @@
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net7.0"
+        "net6.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
+        "net6.0": {
+          "targetAlias": "net6.0",
           "projectReferences": {}
         }
       },
@@ -43,8 +43,8 @@
       }
     },
     "frameworks": {
-      "net7.0": {
-        "targetAlias": "net7.0",
+      "net6.0": {
+        "targetAlias": "net6.0",
         "imports": [
           "net461",
           "net462",
@@ -56,6 +56,20 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[6.0.22, 6.0.22]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[6.0.22, 6.0.22]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[6.0.22, 6.0.22]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"

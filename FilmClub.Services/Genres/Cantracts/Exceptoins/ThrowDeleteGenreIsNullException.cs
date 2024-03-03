@@ -1,6 +1,6 @@
-﻿namespace FilmClub.Services.Unit.Test.GenresTest
+﻿namespace FilmClub.Services.Genres.Cantracts.Exceptoins
 {
-    public class ThrowDeleteGenreIsNullException:Exception
+    public class ThrowDeleteGenreIsNullException : Exception
     {
     }
 }

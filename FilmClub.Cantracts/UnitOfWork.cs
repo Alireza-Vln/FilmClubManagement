@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FilmClub.Contracts
+namespace FilmClubs.Contracts
 {
-   public interface UnitOfWork
+    public interface UnitOfWork
     {
         Task Begin();
         Task Commit();

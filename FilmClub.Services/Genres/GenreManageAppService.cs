@@ -1,9 +1,8 @@
-﻿
-using FilmClub.Contracts;
+﻿using FilmClub.Entities.Genres;
+using FilmClub.Services.Genres.Cantracts;
 using FilmClub.Services.Genres.Cantracts.Dtos;
-using FilmClub.Services.Genres.Contracts;
-using FilmClub.Services.Unit.Test.Genres;
-using FilmClub.Services.Unit.Test.GenresTest;
+using FilmClub.Services.Genres.Cantracts.Exceptoins;
+using FilmClubs.Contracts;
 
 namespace FilmClub.Services.Genres
 {

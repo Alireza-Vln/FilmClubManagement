@@ -1,11 +1,4 @@
-﻿
-using FilmClub.Services.Genres;
-using FilmClub.Services.Unit.Test.FilmsTest;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using FilmClub.Services.Films.Contracts.Dtos;
 
 namespace FilmClub.Test.Tools.Films.Factories
 {

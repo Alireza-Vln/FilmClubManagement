@@ -1,13 +1,8 @@
-﻿using FilmClub.Services.Genres;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using FilmClub.Entities.Genres;
 
 namespace FilmClub.Test.Tools.Genres.Builders
 {
-   public class GenreBuilder
+    public class GenreBuilder
     {
         readonly Genre _genre;
         public GenreBuilder()

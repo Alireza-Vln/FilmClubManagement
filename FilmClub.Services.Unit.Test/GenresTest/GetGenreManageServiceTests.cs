@@ -1,16 +1,9 @@
-﻿using DoctorAppointment.Test.Tools.Infrastructure.DatabaseConfig.Unit;
-using FilmClub.Services.Genres.Contracts;
-using FilmClub.Services.Genres;
-using FilmClub.Services.Unit.Test.Genres;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using FilmClub.Test.Tools.Genres.Builders;
+﻿using FilmClub.Test.Tools.Genres.Builders;
 using FluentAssertions;
-using Microsoft.EntityFrameworkCore;
 using FilmClub.Test.Tools.Genres.Factories;
+using FilmClub.Services.Genres.Cantracts;
+using FilmClub.Test.Tools.Infrastructure.DatabaseConfig.Unit;
+using FilmClubManagement.Persistance.EF;
 
 namespace FilmClub.Services.Unit.Test.GenresTest
 {

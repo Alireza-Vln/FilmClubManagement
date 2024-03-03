@@ -1,4 +1,4 @@
-using FilmClub.Services.Unit.Test.Genres;
+using FilmClubManagement.Persistance.EF;
 using Microsoft.EntityFrameworkCore;
 var builder = WebApplication.CreateBuilder(args);
 

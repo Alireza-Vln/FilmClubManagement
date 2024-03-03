@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FilmClub.Persistence.EF.Films
+namespace DoctorAppointment.Persistance.EF.Films
 {
     public class FilmEntityMap : IEntityTypeConfiguration<Film>
     {
@@ -24,7 +24,7 @@ namespace FilmClub.Persistence.EF.Films
             builder.Property(_ => _.Duration).IsRequired();
             builder.Property(_ => _.Description);
             builder.Property(_ => _.Rate).IsRequired();
-            builder.Property(_=>_.GenreId).IsRequired();
+            builder.Property(_ => _.GenreId).IsRequired();
         }
     }
 }

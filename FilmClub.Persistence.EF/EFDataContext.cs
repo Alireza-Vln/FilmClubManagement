@@ -1,11 +1,11 @@
 ﻿using FilmClub.Entities.Films;
-using FilmClub.Services.Genres;
+using FilmClub.Entities.Genres;
 using Microsoft.EntityFrameworkCore;
 using System.Numerics;
 
-namespace FilmClub.Services.Unit.Test.Genres
+namespace FilmClubManagement.Persistance.EF
 {
-    public class EFDataContext :DbContext
+    public class EFDataContext : DbContext
     {
         public EFDataContext(string connectionString) :
         this(new DbContextOptionsBuilder().UseSqlServer(connectionString).Options)
@@ -17,7 +17,7 @@ namespace FilmClub.Services.Unit.Test.Genres
         {
         }
 
-       
+
         public DbSet<Genre> Genres { get; set; }
         public DbSet<Film> Films { get; set; }
 

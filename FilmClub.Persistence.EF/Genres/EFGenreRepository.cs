@@ -1,10 +1,9 @@
-﻿using FilmClub.Services.Genres;
+﻿using FilmClub.Entities.Genres;
+using FilmClub.Services.Genres.Cantracts;
 using FilmClub.Services.Genres.Cantracts.Dtos;
-using FilmClub.Services.Genres.Contracts;
-using FilmClub.Services.Unit.Test.GenresTest;
 using Microsoft.EntityFrameworkCore;
 
-namespace FilmClub.Services.Unit.Test.Genres
+namespace FilmClubManagement.Persistance.EF.Genres
 {
     public class EFGenreRepository : GenreRepository
     {
@@ -25,13 +24,13 @@ namespace FilmClub.Services.Unit.Test.Genres
             return _genre.FirstOrDefault(_ => _.Id == id);
         }
 
-     
+
         public void Remove(Genre? genre)
         {
             _genre.Remove(genre);
         }
 
-     public List<GetGenreManageDto> Get(GenreFilterDto? filterDto)
+        public List<GetGenreManageDto> Get(GenreFilterDto? filterDto)
         {
             var genre = _genre.Select(_ => new GetGenreManageDto
             {
@@ -40,9 +39,9 @@ namespace FilmClub.Services.Unit.Test.Genres
                 Rate = _.Rate,
 
             });
-            if(filterDto.Title != null)
+            if (filterDto.Title != null)
             {
-                genre=genre.Where(_=>_.Title==filterDto.Title);
+                genre = genre.Where(_ => _.Title == filterDto.Title);
             }
             return genre.ToList();
         }

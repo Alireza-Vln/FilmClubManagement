@@ -1,4 +1,4 @@
-﻿namespace FilmClub.Services.Unit.Test.FilmsTest
+﻿namespace FilmClub.Services.Films.Contracts.Dtos
 {
     public class AddFilmDto
     {

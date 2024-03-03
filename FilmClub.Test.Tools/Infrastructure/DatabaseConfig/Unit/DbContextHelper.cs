@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 
-namespace DoctorAppointment.Test.Tools.Infrastructure.DatabaseConfig.Unit;
+namespace FilmClub.Test.Tools.Infrastructure.DatabaseConfig.Unit;
 
 public static class DbContextHelper
 {

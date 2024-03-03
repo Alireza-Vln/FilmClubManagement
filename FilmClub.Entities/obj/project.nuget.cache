@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "hWFWfhzvBZuvmVxO1zBFKWLzAHRgXXemsPVrl6rjKIDpkvJrXwe3hJEGmj/MCv9o9kg8JDncXqkrBLXNOUlLgQ==",
+  "dgSpecHash": "r3+3my1ymB8hjHTM8wa0wKp7lGFPZW+K+YLnC0f7B1s6AqEv64Es3XKZYKg43zfUpEOZ/jTY0kfiSDQmicXlLA==",
   "success": true,
   "projectFilePath": "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Entities\\FilmClub.Entities.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\welldone\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.22\\microsoft.windowsdesktop.app.ref.6.0.22.nupkg.sha512",
+    "C:\\Users\\welldone\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.22\\microsoft.netcore.app.ref.6.0.22.nupkg.sha512",
+    "C:\\Users\\welldone\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.22\\microsoft.aspnetcore.app.ref.6.0.22.nupkg.sha512"
+  ],
   "logs": []
 }

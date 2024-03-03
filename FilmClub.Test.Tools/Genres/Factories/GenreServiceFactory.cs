@@ -1,12 +1,7 @@
-﻿using FilmClub.Services.Genres;
-using FilmClub.Services.Genres.Contracts;
-using FilmClub.Services.Unit.Test.Genres;
-using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using FilmClubManagement.Persistance.EF;
+using FilmClubManagement.Persistance.EF.Genres;
+using FilmClub.Services.Genres;
+using FilmClub.Services.Genres.Cantracts;
 
 namespace FilmClub.Test.Tools.Genres.Factories
 {

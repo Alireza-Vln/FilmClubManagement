@@ -2,7 +2,7 @@ using System.Reflection;
 using Microsoft.Data.Sqlite;
 using Microsoft.EntityFrameworkCore;
 
-namespace DoctorAppointment.Test.Tools.Infrastructure.DatabaseConfig.Unit;
+namespace FilmClub.Test.Tools.Infrastructure.DatabaseConfig.Unit;
 
 public class EFInMemoryDatabase : IDisposable
 {
@@ -12,7 +12,7 @@ public class EFInMemoryDatabase : IDisposable
     {
         _connection = new SqliteConnection("filename=:memory:");
         _connection.Open();
-       
+
     }
 
     public void Dispose()
@@ -123,8 +123,8 @@ public class EFInMemoryDatabase : IDisposable
         where TDbContext : DbContext
     {
         var dbContext = ResolveFactory<TDbContext>().Invoke();
-        dbContext.Database.EnsureCreated();  
-        
+        dbContext.Database.EnsureCreated();
+
         return dbContext;
     }
 }

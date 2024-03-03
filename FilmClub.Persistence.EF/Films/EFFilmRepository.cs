@@ -1,10 +1,10 @@
 ﻿using FilmClub.Entities.Films;
-using FilmClub.Services.Unit.Test.Genres;
+using FilmClub.Services.Films.Contracts;
 using Microsoft.EntityFrameworkCore;
 
-namespace FilmClub.Services.Unit.Test.FilmsTest
+namespace FilmClubManagement.Persistance.EF.Films
 {
-    public class EFFilmRepository:FilmRepository
+    public class EFFilmRepository : FilmRepository
     {
         private readonly DbSet<Film> _Film;
 

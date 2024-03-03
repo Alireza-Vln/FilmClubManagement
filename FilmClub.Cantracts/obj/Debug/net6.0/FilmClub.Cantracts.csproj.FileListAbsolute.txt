@@ -1,0 +1,11 @@
+C:\Users\welldone\Desktop\Alireza\FilmClubManagement\FilmClub.Cantracts\bin\Debug\net6.0\FilmClub.Cantracts.deps.json
+C:\Users\welldone\Desktop\Alireza\FilmClubManagement\FilmClub.Cantracts\bin\Debug\net6.0\FilmClub.Cantracts.dll
+C:\Users\welldone\Desktop\Alireza\FilmClubManagement\FilmClub.Cantracts\bin\Debug\net6.0\FilmClub.Cantracts.pdb
+C:\Users\welldone\Desktop\Alireza\FilmClubManagement\FilmClub.Cantracts\obj\Debug\net6.0\FilmClub.Cantracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\welldone\Desktop\Alireza\FilmClubManagement\FilmClub.Cantracts\obj\Debug\net6.0\FilmClub.Cantracts.AssemblyInfoInputs.cache
+C:\Users\welldone\Desktop\Alireza\FilmClubManagement\FilmClub.Cantracts\obj\Debug\net6.0\FilmClub.Cantracts.AssemblyInfo.cs
+C:\Users\welldone\Desktop\Alireza\FilmClubManagement\FilmClub.Cantracts\obj\Debug\net6.0\FilmClub.Cantracts.csproj.CoreCompileInputs.cache
+C:\Users\welldone\Desktop\Alireza\FilmClubManagement\FilmClub.Cantracts\obj\Debug\net6.0\FilmClub.Cantracts.dll
+C:\Users\welldone\Desktop\Alireza\FilmClubManagement\FilmClub.Cantracts\obj\Debug\net6.0\refint\FilmClub.Cantracts.dll
+C:\Users\welldone\Desktop\Alireza\FilmClubManagement\FilmClub.Cantracts\obj\Debug\net6.0\FilmClub.Cantracts.pdb
+C:\Users\welldone\Desktop\Alireza\FilmClubManagement\FilmClub.Cantracts\obj\Debug\net6.0\ref\FilmClub.Cantracts.dll

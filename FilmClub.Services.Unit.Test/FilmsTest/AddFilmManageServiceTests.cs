@@ -1,14 +1,9 @@
-﻿using DoctorAppointment.Test.Tools.Infrastructure.DatabaseConfig.Unit;
-using FilmClub.Services.Genres.Contracts;
-using FilmClub.Services.Unit.Test.Genres;
+﻿using FilmClub.Test.Tools.Infrastructure.DatabaseConfig.Unit;
 using FilmClub.Test.Tools.Films.Factories;
 using FilmClub.Test.Tools.Genres.Builders;
 using FluentAssertions;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using FilmClub.Services.Films.Contracts;
+using FilmClubManagement.Persistance.EF;
 
 namespace FilmClub.Services.Unit.Test.FilmsTest
 {
@@ -25,6 +20,7 @@ namespace FilmClub.Services.Unit.Test.FilmsTest
             _readContext = db.CreateDataContext<EFDataContext>();
             _sut = FilmServiceFactory.Create(_context);
         }
+
         [Fact]
         public async Task Add_adds_Film_properly()
         {
