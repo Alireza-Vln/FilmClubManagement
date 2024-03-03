@@ -4,6 +4,8 @@ using FilmClub.Test.Tools.Genres.Builders;
 using FluentAssertions;
 using FilmClub.Services.Films.Contracts;
 using FilmClubManagement.Persistance.EF;
+using System.ComponentModel.DataAnnotations;
+using FilmClub.Services.Genres.Cantracts.Exceptoins;
 
 namespace FilmClub.Services.Unit.Test.FilmsTest
 {
@@ -41,9 +43,16 @@ namespace FilmClub.Services.Unit.Test.FilmsTest
             actual.PenaltyRate.Should().Be(dto.PenaltyRate);
             actual.Description.Should().Be(dto.Description);
             actual.GenreId.Should().Be(genre.Id);
+        }
+        [Fact]
+        public async Task Throw_adds_film_if_genre_is_null()
+        {
+            var dummyGenreId = 1;
+            var dto = AddFilmDtoFactory.Create(dummyGenreId);
 
+            var actual=()=>_sut.Add(dummyGenreId, dto);
 
-
+          await  actual.Should().ThrowExactlyAsync<ThrowAddsFilmIfGenreIsNullException>();
         }
     }
 }

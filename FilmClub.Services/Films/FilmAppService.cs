@@ -2,6 +2,7 @@
 using FilmClub.Services.Films.Contracts;
 using FilmClub.Services.Films.Contracts.Dtos;
 using FilmClub.Services.Genres.Cantracts;
+using FilmClub.Services.Unit.Test.FilmsTest;
 using FilmClubs.Contracts;
 
 namespace FilmClub.Services.Films
@@ -21,7 +22,10 @@ namespace FilmClub.Services.Films
         public async Task Add(int genreId, AddFilmDto dto)
         {
             var genre = _GenreRepository.FindGenreById(genreId);
-
+            if(genre == null)
+            {
+                throw new ThrowAddsFilmIfGenreIsNullException();
+            }
             var film = new Film()
             {
                 Name = dto.Name,
