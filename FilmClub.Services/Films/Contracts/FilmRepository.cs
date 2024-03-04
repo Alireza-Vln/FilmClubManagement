@@ -8,5 +8,6 @@ namespace FilmClub.Services.Films.Contracts
     {
         void Add(Film film);
        List<GetFilmManageDto> Get(FilmFilterDto? filter);
+        Film FindFilm(int filmId);
     }
 }

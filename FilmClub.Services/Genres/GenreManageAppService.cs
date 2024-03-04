@@ -1,4 +1,5 @@
 ﻿using FilmClub.Entities.Genres;
+using FilmClub.Services.Films.Contracts;
 using FilmClub.Services.Genres.Cantracts;
 using FilmClub.Services.Genres.Cantracts.Dtos;
 using FilmClub.Services.Genres.Cantracts.Exceptoins;
@@ -10,8 +11,10 @@ namespace FilmClub.Services.Genres
     {
         private readonly GenreRepository _repository;
         private readonly UnitOfWork _unitOfWork;
-        public GenreManageAppService(GenreRepository repository, UnitOfWork unitOfWork)
+        private readonly FilmRepository _filmRepository;
+        public GenreManageAppService(GenreRepository repository, UnitOfWork unitOfWork,FilmRepository filmRepository)
         {
+            _filmRepository = filmRepository;
             _repository = repository;
             _unitOfWork = unitOfWork;
         }
@@ -33,7 +36,7 @@ namespace FilmClub.Services.Genres
             {
                 throw new ThrowDeleteGenreIsNullException();
             }
-            if(genre.Films.Count!=0)
+            if(_filmRepository.FindFilm(genre.Id)!=null)
             {
                 throw new ThrowDeleteGenreIfFilmIsNotNullException();
             }

@@ -20,6 +20,11 @@ namespace FilmClubManagement.Persistance.EF.Films
             _Film.Add(film);
         }
 
+        public Film FindFilm(int filmId)
+        {
+            return _Film.FirstOrDefault(_ => _.Id == filmId);
+        }
+
         public List<GetFilmManageDto> Get(FilmFilterDto? filter)
         {
             var film = _Film.Include(_ => _.Genre)
