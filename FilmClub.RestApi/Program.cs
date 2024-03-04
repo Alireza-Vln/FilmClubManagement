@@ -1,4 +1,8 @@
+using FilmClub.Services.Genres;
+using FilmClub.Services.Genres.Cantracts;
 using FilmClubManagement.Persistance.EF;
+using FilmClubManagement.Persistance.EF.Genres;
+using FilmClubs.Contracts;
 using Microsoft.EntityFrameworkCore;
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,6 +18,9 @@ var connectionString = builder.Configuration.GetConnectionString("DefaultConnect
 builder.Services.AddDbContext<EFDataContext>(
     options => options.UseSqlServer(connectionString));
 
+builder.Services.AddScoped<UnitOfWork, EFUnitOfWork>();
+builder.Services.AddScoped<GenreManageService, GenreManageAppService>();
+builder.Services.AddScoped<GenreRepository,EFGenreRepository>();
 
 var app = builder.Build();
 
