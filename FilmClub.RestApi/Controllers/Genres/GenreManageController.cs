@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace FilmClub.RestApi.Controllers.Genres
 {
     [ApiController]
-    [Route("api/Genres")]
+    [Route("api/GenreManage")]
     public class GenreManageController : Controller
     {
         readonly GenreManageService _service;
