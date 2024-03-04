@@ -1,4 +1,6 @@
-﻿namespace FilmClub.Entities.Films
+﻿using FilmClub.Entities.Genres;
+
+namespace FilmClub.Entities.Films
 {
     public class Film
     {
@@ -13,6 +15,7 @@
         public int Count { get; set; }
         public int Rate { get; set; }
         public int GenreId { get; set; }
+        public Genre Genre { get; set; }
        
 
     }

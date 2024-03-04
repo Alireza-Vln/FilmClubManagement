@@ -9,7 +9,7 @@ namespace FilmClub.Services.Films
 {
     public class FilmAppService : FilmService
     {
-        readonly FilmRepository _FilmRepository;
+       public readonly FilmRepository _FilmRepository;
         readonly GenreRepository _GenreRepository;
         readonly UnitOfWork _unitOfWork;
         public FilmAppService(FilmRepository repository, UnitOfWork unitOfWork, GenreRepository GenreRepository)
@@ -42,6 +42,11 @@ namespace FilmClub.Services.Films
 
             _FilmRepository.Add(film);
             await _unitOfWork.Complete();
+        }
+
+        public async Task<List<GetFilmManageDto>> Get(FilmFilterDto? filter)
+        {
+            return  _FilmRepository.Get(filter);
         }
     }
 }

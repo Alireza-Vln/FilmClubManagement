@@ -45,20 +45,20 @@ namespace FilmClub.Services.Unit.Test.GenresTest
 
         }
         [Fact]
-        //public async Task Throw_delete_genre_if_Film_is_Notnull_exception()
-        //{
+        public async Task Throw_delete_genre_if_Film_is_Notnull_exception()
+        {
 
-        //    var genre = new GenreBuilder().Build();
-        //    _context.Save(genre);
-        //    var film=new FilmBuilder().WithGenreId(genre.Id).Build();
+            var genre = new GenreBuilder().Build();
+            _context.Save(genre);
+            var film = new FilmBuilder().WithGenreId(genre.Id).Build();
+            _context.Save(film);
+            var action = () => _sut.Delete(genre.Id);
 
-        //    var action = () => _sut.Delete(genre.Id);
-
-        //    var actual = _readContext.Films.FirstOrDefault(_ => _.GenreId == genre.Id);
-        //    await action.Should().ThrowExactlyAsync<ThrowDeleteGenreIfFilmIsNotNullException>();
+            var actual = _readContext.Films.FirstOrDefault(_ => _.GenreId == genre.Id);
+            await action.Should().ThrowExactlyAsync<ThrowDeleteGenreIfFilmIsNotNullException>();
 
 
 
         }
-    }
+}
 }
