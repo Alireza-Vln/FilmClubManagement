@@ -30,6 +30,13 @@ namespace FilmClub.RestApi.Controllers.Films
         {
             await _service.Update(filmId, dto);
         }
+        [HttpDelete]
+        public async Task Delete([FromQuery] int filmId)
+        {
+            await _service.Remove(filmId);
+        }
+
+
 
 
     }

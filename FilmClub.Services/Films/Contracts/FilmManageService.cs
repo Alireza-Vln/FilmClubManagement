@@ -7,6 +7,7 @@ namespace FilmClub.Services.Films.Contracts
     {
         Task Add(int genreId, AddFilmDto dto);
         Task<List<GetFilmManageDto>> Get(FilmFilterDto? filter);
+        Task Remove(int id);
         Task Update(int id, UpdateFilmDto dto);
     }
 }

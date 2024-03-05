@@ -63,5 +63,10 @@ namespace FilmClubManagement.Persistance.EF.Films
             };
             return film.ToList();
         }
+
+        public void Remove(Film film)
+        {
+           _Film.Remove(film);
+        }
     }
 }

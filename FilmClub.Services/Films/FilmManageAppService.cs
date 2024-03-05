@@ -49,6 +49,18 @@ namespace FilmClub.Services.Films
             return  _FilmRepository.Get(filter);
         }
 
+        public async Task Remove(int id)
+        {
+            var film = _FilmRepository.FindFilm(id);
+            if(film == null)
+            {
+                throw new ThrowRemoveFilmIfFilmIsNullException();
+            }
+
+             _FilmRepository.Remove(film);
+            await _unitOfWork.Complete();
+        }
+
         public async Task Update(int id, UpdateFilmDto dto)
         {
             var film=_FilmRepository.FindFilm(id);
