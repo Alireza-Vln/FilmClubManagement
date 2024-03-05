@@ -10,6 +10,6 @@ namespace FilmClub.Services.Films.Contracts
        List<GetFilmManageDto> GetAll(FilmFilterDto? filter);
         Film FindFilm(int filmId);
         void Remove(Film film);
-        List<GetFilmDto> Get(FilmFilterDto filter);
+        List<GetFilmDto> Get(FilmFilterDto? filter);
     }
 }

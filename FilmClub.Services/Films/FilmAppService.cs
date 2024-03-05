@@ -14,7 +14,7 @@ namespace FilmClub.Services.Unit.Test.FilmsTest.FilmTest
             _unitOfWork=unitOfWork;
         }
 
-        public async Task<List<GetFilmDto>> Get(FilmFilterDto filter)
+        public async Task<List<GetFilmDto>> Get(FilmFilterDto? filter)
         {
           return  _repository.Get(filter);
         }

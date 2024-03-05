@@ -28,7 +28,7 @@ namespace FilmClubManagement.Persistance.EF.Films
             return _Film.FirstOrDefault(_ => _.Id == filmId);
         }
 
-        public List<GetFilmDto> Get(FilmFilterDto filter)
+        public List<GetFilmDto> Get(FilmFilterDto? filter)
         {
 
             var film = _Film.Include(_ => _.Genre)
