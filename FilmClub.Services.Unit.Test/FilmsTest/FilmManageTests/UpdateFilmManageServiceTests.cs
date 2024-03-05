@@ -9,7 +9,7 @@ using FilmClubManagement.Persistance.EF;
 using FluentAssertions;
 
 
-namespace FilmClub.Services.Unit.Test.FilmsTest
+namespace FilmClub.Services.Unit.Test.FilmsTest.FilmManageTests
 {
     public class UpdateFilmManageServiceTests
     {
@@ -26,15 +26,15 @@ namespace FilmClub.Services.Unit.Test.FilmsTest
         [Fact]
         public async Task Update_update_film_properly()
         {
-            var genre=new GenreBuilder().Build();
+            var genre = new GenreBuilder().Build();
             _context.Save(genre);
-            var film=new FilmBuilder().Build();
+            var film = new FilmBuilder().Build();
             _context.Save(film);
-            var dto=UpdateFilmDtoFactory.Create(genre.Id);
+            var dto = UpdateFilmDtoFactory.Create(genre.Id);
 
             await _sut.Update(film.Id, dto);
 
-            var actual = _readContext.Films.Single(_=>_.Id==film.Id);
+            var actual = _readContext.Films.Single(_ => _.Id == film.Id);
 
             actual.Name.Should().Be(dto.Name);
             actual.Director.Should().Be(dto.Director);
@@ -57,9 +57,9 @@ namespace FilmClub.Services.Unit.Test.FilmsTest
             _context.Save(film);
             var dto = UpdateFilmDtoFactory.Create(dummyGenreId);
 
-            var actual=()=> _sut.Update(film.Id, dto);
+            var actual = () => _sut.Update(film.Id, dto);
 
-           await actual.Should().ThrowExactlyAsync<ThrowUpdateFilmProperlyIfGenreIsNullException>();
+            await actual.Should().ThrowExactlyAsync<ThrowUpdateFilmProperlyIfGenreIsNullException>();
 
         }
         [Fact]

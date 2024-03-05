@@ -1,6 +1,4 @@
-﻿using FilmClub.Services.Films.Contracts;
-using FilmClub.Services.Unit.Test.GenresTest;
-using FilmClub.Test.Tools.Films.Factories;
+﻿using FilmClub.Services.Unit.Test.GenresTest;
 using FilmClub.Test.Tools.Genres.Builders;
 using FilmClub.Test.Tools.Infrastructure.DatabaseConfig.Unit;
 using FilmClubManagement.Persistance.EF;
@@ -10,23 +8,20 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Xml.Linq;
-using Xunit;
 
-namespace FilmClub.Services.Unit.Test.FilmsTest
+namespace FilmClub.Services.Unit.Test.FilmsTest.FilmTest
 {
-    public class GetFilmManageServiceTests
+    public class GetFilmServiceTest
     {
         readonly EFDataContext _context;
         readonly EFDataContext _readContext;
-        readonly FilmManageService _sut;
-
-        public GetFilmManageServiceTests()
+        readonly FilmService _sut;
+        public GetFilmServiceTest()
         {
-            var db = new EFInMemoryDatabase();
-            _context = db.CreateDataContext<EFDataContext>();
-            _readContext = db.CreateDataContext<EFDataContext>();
-            _sut = FilmManageServiceFactory.Create(_context);
+            var db=new EFInMemoryDatabase();
+            _context=db.CreateDataContext<EFDataContext>();
+            _readContext=db.CreateDataContext<EFDataContext>();
+            _sut = FilmAppServiceFactory.Create(_context);
         }
         [Fact]
         public async Task Get_gets_all_film_properly()
@@ -38,12 +33,12 @@ namespace FilmClub.Services.Unit.Test.FilmsTest
             var filter = FilmFilterDtoFactory.Create();
 
             var result = await _sut.Get(filter);
-            
+
             result.Single().Id.Should().Be(film.Id);
             result.Single().Name.Should().Be(film.Name);
             result.Single().Director.Should().Be(film.Director);
             result.Single().Duration.Should().Be(film.Duration);
-            result.Single().Poblish.Should().Be(film.Poblish);
+            result.Single().Publish.Should().Be(film.Poblish);
             result.Single().AgeLimit.Should().Be(film.AgeLimit);
             result.Single().Count.Should().Be(film.Count);
             result.Single().Description.Should().Be(film.Description);
@@ -66,7 +61,7 @@ namespace FilmClub.Services.Unit.Test.FilmsTest
             _context.Save(film);
             _context.Save(film2);
             var filter = FilmFilterDtoFactory
-                .Create(film2.Name,film2.Director);
+                .Create(film2.Name, film2.Director);
 
             var result = await _sut.Get(filter);
 
@@ -87,13 +82,13 @@ namespace FilmClub.Services.Unit.Test.FilmsTest
             var filter = FilmFilterDtoFactory
                 .Create(film2.Name);
 
-            var result= await _sut.Get(filter);
+            var result = await _sut.Get(filter);
 
             result.Count.Should().Be(1);
             result.Single().Name.Should().Be(film2.Name);
 
         }
-      
+
         [Fact]
         public async Task Get_gets_film_filtered_by_genre_title()
         {
@@ -101,7 +96,7 @@ namespace FilmClub.Services.Unit.Test.FilmsTest
             var film = new FilmBuilder().WithGenreId(genre.Id).Build();
             _context.Save(genre);
             _context.Save(film);
-           
+
             var filter = FilmFilterDtoFactory
                 .Create(film.Name, film.Director, genre.Title);
 

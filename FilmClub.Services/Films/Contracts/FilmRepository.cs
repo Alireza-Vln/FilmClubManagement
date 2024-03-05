@@ -7,8 +7,9 @@ namespace FilmClub.Services.Films.Contracts
     public interface FilmRepository
     {
         void Add(Film film);
-       List<GetFilmManageDto> Get(FilmFilterDto? filter);
+       List<GetFilmManageDto> GetAll(FilmFilterDto? filter);
         Film FindFilm(int filmId);
         void Remove(Film film);
+        List<GetFilmDto> Get(FilmFilterDto filter);
     }
 }

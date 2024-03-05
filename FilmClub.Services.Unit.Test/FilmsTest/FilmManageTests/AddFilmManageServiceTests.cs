@@ -7,18 +7,18 @@ using FilmClubManagement.Persistance.EF;
 using System.ComponentModel.DataAnnotations;
 using FilmClub.Services.Genres.Cantracts.Exceptoins;
 
-namespace FilmClub.Services.Unit.Test.FilmsTest
+namespace FilmClub.Services.Unit.Test.FilmsTest.FilmManageTests
 {
     public class AddFilmManageServiceTests
     {
         readonly EFDataContext _context;
         readonly EFDataContext _readContext;
         readonly FilmManageService _sut;
-      
+
         public AddFilmManageServiceTests()
         {
-            var db=new EFInMemoryDatabase();
-            _context=db.CreateDataContext<EFDataContext>();
+            var db = new EFInMemoryDatabase();
+            _context = db.CreateDataContext<EFDataContext>();
             _readContext = db.CreateDataContext<EFDataContext>();
             _sut = FilmManageServiceFactory.Create(_context);
         }
@@ -26,13 +26,13 @@ namespace FilmClub.Services.Unit.Test.FilmsTest
         [Fact]
         public async Task Add_adds_Film_properly()
         {
-            var genre=new GenreBuilder().Build();
+            var genre = new GenreBuilder().Build();
             _context.Save(genre);
             var dto = AddFilmDtoFactory.Create(genre.Id);
 
             await _sut.Add(genre.Id, dto);
-            
-            var actual=_readContext.Films.Single();
+
+            var actual = _readContext.Films.Single();
             actual.Name.Should().Be(dto.Name);
             actual.Director.Should().Be(dto.Director);
             actual.Poblish.Should().Be(dto.Poblish);
@@ -50,9 +50,9 @@ namespace FilmClub.Services.Unit.Test.FilmsTest
             var dummyGenreId = 1;
             var dto = AddFilmDtoFactory.Create(dummyGenreId);
 
-            var actual=()=>_sut.Add(dummyGenreId, dto);
+            var actual = () => _sut.Add(dummyGenreId, dto);
 
-          await  actual.Should().ThrowExactlyAsync<ThrowAddsFilmIfGenreIsNullException>();
+            await actual.Should().ThrowExactlyAsync<ThrowAddsFilmIfGenreIsNullException>();
         }
     }
 }

@@ -12,7 +12,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FilmClub.Services.Unit.Test.FilmsTest
+namespace FilmClub.Services.Unit.Test.FilmsTest.FilmManageTests
 {
     public class DeleteFilmManageServiceTests
     {
@@ -22,8 +22,8 @@ namespace FilmClub.Services.Unit.Test.FilmsTest
         public DeleteFilmManageServiceTests()
         {
             var db = new EFInMemoryDatabase();
-            _context=db.CreateDataContext<EFDataContext>();
-            _readContext=db.CreateDataContext<EFDataContext>();
+            _context = db.CreateDataContext<EFDataContext>();
+            _readContext = db.CreateDataContext<EFDataContext>();
             _sut = FilmManageServiceFactory.Create(_context);
         }
         [Fact]
@@ -31,13 +31,13 @@ namespace FilmClub.Services.Unit.Test.FilmsTest
         {
             var genre = new GenreBuilder().Build();
             _context.Save(genre);
-            var film=new FilmBuilder().WithGenreId(genre.Id).Build();
+            var film = new FilmBuilder().WithGenreId(genre.Id).Build();
             _context.Save(film);
-           
+
 
             await _sut.Remove(film.Id);
 
-            var actual = _readContext.Films.FirstOrDefault(_=>_.Id==film.Id);
+            var actual = _readContext.Films.FirstOrDefault(_ => _.Id == film.Id);
 
             actual.Should().BeNull();
         }

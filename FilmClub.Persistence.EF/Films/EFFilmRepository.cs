@@ -10,12 +10,12 @@ namespace FilmClubManagement.Persistance.EF.Films
     public class EFFilmRepository : FilmRepository
     {
         private readonly DbSet<Film> _Film;
-        
+
 
         public EFFilmRepository(EFDataContext context)
         {
             _Film = context.Films;
-            
+
         }
 
         public void Add(Film film)
@@ -28,23 +28,24 @@ namespace FilmClubManagement.Persistance.EF.Films
             return _Film.FirstOrDefault(_ => _.Id == filmId);
         }
 
-        public List<GetFilmManageDto> Get(FilmFilterDto? filter)
+        public List<GetFilmDto> Get(FilmFilterDto filter)
         {
+
             var film = _Film.Include(_ => _.Genre)
-                .Select(_ => new GetFilmManageDto
-            {
-                Id = _.Id,
-                Name = _.Name,
-                AgeLimit = _.AgeLimit,
-                Count = _.Count,
-                Description = _.Description,
-                Director = _.Director,
-                Duration = _.Duration,
-                PenaltyRate = _.PenaltyRate,
-                Poblish = _.Poblish,
-                Rate = _.Rate,
-                GenreName = _.Genre.Title
-            });
+                .Select(_ => new GetFilmDto
+                {
+                    Id = _.Id,
+                    Name = _.Name,
+                    AgeLimit = _.AgeLimit,
+                    Count = _.Count,
+                    Description = _.Description,
+                    Director = _.Director,
+                    Duration = _.Duration,
+                    PenaltyRate = _.PenaltyRate,
+                    Publish = _.Poblish,
+                    Rate = _.Rate,
+                    GenreName = _.Genre.Title
+                });
             if (filter.Director != null)
             {
                 film = film.Where(_ => _.Director == filter.Director);
@@ -52,13 +53,50 @@ namespace FilmClubManagement.Persistance.EF.Films
             }
             if (filter.Name != null)
             {
-                film=film.Where(_=>_.Name == filter.Name);
+                film = film.Where(_ => _.Name == filter.Name);
 
             }
-           
+
             if (filter.GenreName != null)
             {
-                film =film. Where(_ => _.GenreName == filter.GenreName);
+                film = film.Where(_ => _.GenreName == filter.GenreName);
+
+            };
+            return film.ToList();
+        }
+
+
+        public List<GetFilmManageDto> GetAll(FilmFilterDto? filter)
+        {
+            var film = _Film.Include(_ => _.Genre)
+                .Select(_ => new GetFilmManageDto
+                {
+                    Id = _.Id,
+                    Name = _.Name,
+                    AgeLimit = _.AgeLimit,
+                    Count = _.Count,
+                    Description = _.Description,
+                    Director = _.Director,
+                    Duration = _.Duration,
+                    PenaltyRate = _.PenaltyRate,
+                    Poblish = _.Poblish,
+                    Rate = _.Rate,
+                    GenreName = _.Genre.Title
+                });
+            if (filter.Director != null)
+            {
+                film = film.Where(_ => _.Director == filter.Director);
+
+            }
+            if (filter.Name != null)
+            {
+                film = film.Where(_ => _.Name == filter.Name);
+
+            }
+
+            if (filter.GenreName != null)
+            {
+                film = film.Where(_ => _.GenreName == filter.GenreName);
 
             };
             return film.ToList();
@@ -66,7 +104,7 @@ namespace FilmClubManagement.Persistance.EF.Films
 
         public void Remove(Film film)
         {
-           _Film.Remove(film);
+            _Film.Remove(film);
         }
     }
 }

@@ -46,7 +46,7 @@ namespace FilmClub.Services.Films
 
         public async Task<List<GetFilmManageDto>> Get(FilmFilterDto? filter)
         {
-            return  _FilmRepository.Get(filter);
+            return  _FilmRepository.GetAll(filter);
         }
 
         public async Task Remove(int id)

@@ -27,7 +27,7 @@ namespace FilmClub.Services.Unit.Test.GenresTest.GenreTests
             _sut = GenreServiceFactory.Create(_context);
         }
         [Fact]
-        public async Task Get_gets_all_genre_manage_properly()
+        public async Task Get_gets_all_genre_properly()
         {
             var genre = new GenreBuilder().Build();
             _context.Save(genre);
