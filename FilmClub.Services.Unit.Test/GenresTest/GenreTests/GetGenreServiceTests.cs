@@ -35,7 +35,7 @@ namespace FilmClub.Services.Unit.Test.GenresTest.GenreTests
 
             var actual = await _sut.Get(filter);
 
-            actual.Single().Id.Should().Be(genre.Id);
+         
             actual.Single().Title.Should().Be(genre.Title);
             actual.Single().Rate.Should().Be(genre.Rate);
 

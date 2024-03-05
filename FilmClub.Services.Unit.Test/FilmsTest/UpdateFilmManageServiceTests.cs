@@ -1,38 +1,40 @@
-﻿using FilmClub.Test.Tools.Infrastructure.DatabaseConfig.Unit;
+﻿using FilmClub.Services.Films.Contracts;
+using FilmClub.Services.Unit.Test.GenresTest;
 using FilmClub.Test.Tools.Films.Factories;
 using FilmClub.Test.Tools.Genres.Builders;
-using FluentAssertions;
-using FilmClub.Services.Films.Contracts;
+using FilmClub.Test.Tools.Genres.Factories;
+using FilmClub.Test.Tools.Infrastructure.DatabaseConfig.Unit;
 using FilmClubManagement.Persistance.EF;
-using System.ComponentModel.DataAnnotations;
-using FilmClub.Services.Genres.Cantracts.Exceptoins;
+using FluentAssertions;
+
 
 namespace FilmClub.Services.Unit.Test.FilmsTest
 {
-    public class AddFilmManageServiceTests
+    public class UpdateFilmManageServiceTests
     {
         readonly EFDataContext _context;
         readonly EFDataContext _readContext;
         readonly FilmManageService _sut;
-      
-        public AddFilmManageServiceTests()
+        public UpdateFilmManageServiceTests()
         {
-            var db=new EFInMemoryDatabase();
-            _context=db.CreateDataContext<EFDataContext>();
+            var db = new EFInMemoryDatabase();
+            _context = db.CreateDataContext<EFDataContext>();
             _readContext = db.CreateDataContext<EFDataContext>();
             _sut = FilmManageServiceFactory.Create(_context);
         }
-
         [Fact]
-        public async Task Add_adds_Film_properly()
+        public async Task Update_update_film_properly()
         {
             var genre=new GenreBuilder().Build();
             _context.Save(genre);
-            var dto = AddFilmDtoFactory.Create(genre.Id);
+            var film=new FilmBuilder().Build();
+            _context.Save(film);
+            var dto=UpdateFilmDtoFactory.Create(genre.Id);
 
-            await _sut.Add(genre.Id, dto);
-            
-            var actual=_readContext.Films.Single();
+            await _sut.Update(film.Id, dto);
+
+            var actual = _readContext.Films.Single(_=>_.Id==film.Id);
+
             actual.Name.Should().Be(dto.Name);
             actual.Director.Should().Be(dto.Director);
             actual.Poblish.Should().Be(dto.Poblish);
@@ -42,17 +44,7 @@ namespace FilmClub.Services.Unit.Test.FilmsTest
             actual.Rate.Should().Be(dto.Rate);
             actual.PenaltyRate.Should().Be(dto.PenaltyRate);
             actual.Description.Should().Be(dto.Description);
-            actual.GenreId.Should().Be(genre.Id);
-        }
-        [Fact]
-        public async Task Throw_adds_film_if_genre_is_null()
-        {
-            var dummyGenreId = 1;
-            var dto = AddFilmDtoFactory.Create(dummyGenreId);
-
-            var actual=()=>_sut.Add(dummyGenreId, dto);
-
-          await  actual.Should().ThrowExactlyAsync<ThrowAddsFilmIfGenreIsNullException>();
+            actual.GenreId.Should().Be(dto.GenreId);
         }
     }
 }

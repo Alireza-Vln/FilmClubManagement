@@ -7,12 +7,12 @@ using FilmClubs.Contracts.Interfaces;
 
 namespace FilmClub.Services.Films
 {
-    public class FilmAppService : FilmService
+    public class FilmManageAppService : FilmManageService
     {
        public readonly FilmRepository _FilmRepository;
         readonly GenreRepository _GenreRepository;
         readonly UnitOfWork _unitOfWork;
-        public FilmAppService(FilmRepository repository, UnitOfWork unitOfWork, GenreRepository GenreRepository)
+        public FilmManageAppService(FilmRepository repository, UnitOfWork unitOfWork, GenreRepository GenreRepository)
         {
             _GenreRepository = GenreRepository;
             _FilmRepository = repository;
@@ -47,6 +47,29 @@ namespace FilmClub.Services.Films
         public async Task<List<GetFilmManageDto>> Get(FilmFilterDto? filter)
         {
             return  _FilmRepository.Get(filter);
+        }
+
+        public async Task Update(int id, UpdateFilmDto dto)
+        {
+            var film=_FilmRepository.FindFilm(id);
+            var genre=_GenreRepository.FindGenreById(dto.GenreId);
+            if(genre == null)
+            {
+
+            }
+            film.Name = dto.Name;
+            film.Description = dto.Description;
+            film.Director = dto.Director;
+            film.Poblish = dto.Poblish;
+            film.Duration = dto.Duration;
+            film.AgeLimit = dto.AgeLimit;
+            film.Count = dto.Count;
+            film.PenaltyRate = dto.PenaltyRate;
+            film.Rate = dto.Rate;
+            film.GenreId= dto.GenreId;
+
+            await _unitOfWork.Complete();
+           
         }
     }
 }

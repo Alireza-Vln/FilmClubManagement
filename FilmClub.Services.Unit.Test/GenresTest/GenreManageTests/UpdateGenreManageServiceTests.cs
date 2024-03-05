@@ -36,7 +36,7 @@ namespace FilmClub.Services.Unit.Test.GenresTest.GenreManageTest
 
         }
         [Fact]
-        public async Task Thorw_update_genre_if_gener_is_null_exception()
+        public async Task Throw_update_genre_if_genre_is_null_exception()
         {
             var dummyId = 1;
             var dto = UpdateGenreManageDtoFactory.Create();

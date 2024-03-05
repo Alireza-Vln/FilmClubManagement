@@ -10,8 +10,8 @@ namespace FilmClub.RestApi.Controllers.Films
     [Route("api/Films")]
     public class FilmManageController : Controller
     {
-        private readonly FilmService _service;
-        public FilmManageController(FilmService service)
+        private readonly FilmManageService _service;
+        public FilmManageController(FilmManageService service)
         {
             _service = service;
         }
@@ -24,6 +24,11 @@ namespace FilmClub.RestApi.Controllers.Films
         public async Task<List<GetFilmManageDto>> Get([FromQuery] FilmFilterDto? filterDto)
         {
             return await _service.Get(filterDto);
+        }
+        [HttpPatch]
+        public async Task Update([FromQuery] int filmId, [FromBody] UpdateFilmDto dto)
+        {
+            await _service.Update(filmId, dto);
         }
 
 

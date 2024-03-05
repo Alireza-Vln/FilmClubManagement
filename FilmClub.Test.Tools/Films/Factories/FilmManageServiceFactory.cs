@@ -6,11 +6,11 @@ using FilmClub.Services.Films.Contracts;
 
 namespace FilmClub.Test.Tools.Films.Factories
 {
-    public static class FilmServiceFactory
+    public static class FilmManageServiceFactory
     {
-        public static FilmService Create(EFDataContext context)
+        public static FilmManageService Create(EFDataContext context)
         {
-            return new FilmAppService(new EFFilmRepository(context), new EFUnitOfWork(context), new EFGenreRepository(context));
+            return new FilmManageAppService(new EFFilmRepository(context), new EFUnitOfWork(context), new EFGenreRepository(context));
         }
     }
 }

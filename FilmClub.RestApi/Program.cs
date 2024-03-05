@@ -27,7 +27,7 @@ builder.Services.AddScoped<GenreManageService, GenreManageAppService>();
 builder.Services.AddScoped<GenreService, GenreAppService>();
 builder.Services.AddScoped<GenreRepository,EFGenreRepository>();
 builder.Services.AddScoped<FilmRepository, EFFilmRepository>();
-builder.Services.AddScoped<FilmService, FilmAppService>();
+builder.Services.AddScoped<FilmManageService, FilmManageAppService>();
 
 var app = builder.Build();
 

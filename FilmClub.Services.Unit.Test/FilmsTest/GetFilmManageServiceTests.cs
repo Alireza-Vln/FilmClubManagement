@@ -19,14 +19,14 @@ namespace FilmClub.Services.Unit.Test.FilmsTest
     {
         readonly EFDataContext _context;
         readonly EFDataContext _readContext;
-        readonly FilmService _sut;
+        readonly FilmManageService _sut;
 
         public GetFilmManageServiceTests()
         {
             var db = new EFInMemoryDatabase();
             _context = db.CreateDataContext<EFDataContext>();
             _readContext = db.CreateDataContext<EFDataContext>();
-            _sut = FilmServiceFactory.Create(_context);
+            _sut = FilmManageServiceFactory.Create(_context);
         }
         [Fact]
         public async Task Get_gets_all_film_properly()

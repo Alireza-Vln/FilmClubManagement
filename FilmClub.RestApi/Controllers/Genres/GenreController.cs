@@ -1,5 +1,6 @@
 ﻿using FilmClub.Services.Genres.Cantracts;
 using FilmClub.Services.Genres.Cantracts.Dtos;
+using FilmClub.Services.Unit.Test.GenresTest.GenreTests;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FilmClub.RestApi.Controllers.Genres
@@ -8,14 +9,14 @@ namespace FilmClub.RestApi.Controllers.Genres
     [Route("api/Genre")]
     public class GenreController : Controller
     {
-        readonly GenreManageService _service;
-        public GenreController(GenreManageService service)
+        readonly GenreService _service;
+        public GenreController(GenreService service)
         {
             _service = service;
         }
 
         [HttpGet]
-        public async Task<List<GetGenreManageDto>> Get([FromQuery] GenreFilterDto filterDto)
+        public async Task<List<GetGenreDto>> Get([FromQuery] GenreFilterDto filterDto)
         {
             return await _service.Get(filterDto);
         }
