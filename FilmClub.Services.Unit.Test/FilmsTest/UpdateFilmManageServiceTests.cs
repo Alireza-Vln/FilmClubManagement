@@ -1,4 +1,5 @@
-﻿using FilmClub.Services.Films.Contracts;
+﻿using FilmClub.Entities.Genres;
+using FilmClub.Services.Films.Contracts;
 using FilmClub.Services.Unit.Test.GenresTest;
 using FilmClub.Test.Tools.Films.Factories;
 using FilmClub.Test.Tools.Genres.Builders;
@@ -45,6 +46,34 @@ namespace FilmClub.Services.Unit.Test.FilmsTest
             actual.PenaltyRate.Should().Be(dto.PenaltyRate);
             actual.Description.Should().Be(dto.Description);
             actual.GenreId.Should().Be(dto.GenreId);
+        }
+        [Fact]
+        public async Task Throw_update_film_properly_if_genre_is_null_exception()
+        {
+            var dummyGenreId = 154;
+            var genre = new GenreBuilder().Build();
+            _context.Save(genre);
+            var film = new FilmBuilder().WithGenreId(genre.Id).Build();
+            _context.Save(film);
+            var dto = UpdateFilmDtoFactory.Create(dummyGenreId);
+
+            var actual=()=> _sut.Update(film.Id, dto);
+
+           await actual.Should().ThrowExactlyAsync<ThrowUpdateFilmProperlyIfGenreIsNullException>();
+
+        }
+        [Fact]
+        public async Task Throw_update_film_properly_if_film_is_null_exception()
+        {
+            var dummyFilmId = 154;
+            var genre = new GenreBuilder().Build();
+            _context.Save(genre);
+            var dto = UpdateFilmDtoFactory.Create(genre.Id);
+
+            var actual = () => _sut.Update(dummyFilmId, dto);
+
+            await actual.Should().ThrowExactlyAsync<ThrowUpdateFilmProperlyIfFilmIsNullException>();
+
         }
     }
 }

@@ -55,8 +55,13 @@ namespace FilmClub.Services.Films
             var genre=_GenreRepository.FindGenreById(dto.GenreId);
             if(genre == null)
             {
-
+                throw new ThrowUpdateFilmProperlyIfGenreIsNullException();
             }
+            if(film==null)
+            {
+                throw new ThrowUpdateFilmProperlyIfFilmIsNullException();
+            }
+          
             film.Name = dto.Name;
             film.Description = dto.Description;
             film.Director = dto.Director;
