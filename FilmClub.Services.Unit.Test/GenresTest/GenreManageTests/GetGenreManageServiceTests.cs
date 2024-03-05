@@ -5,7 +5,7 @@ using FilmClub.Services.Genres.Cantracts;
 using FilmClub.Test.Tools.Infrastructure.DatabaseConfig.Unit;
 using FilmClubManagement.Persistance.EF;
 
-namespace FilmClub.Services.Unit.Test.GenresTest
+namespace FilmClub.Services.Unit.Test.GenresTest.GenreManageTest
 {
     public class GetGenreManageServiceTests
     {
@@ -18,10 +18,10 @@ namespace FilmClub.Services.Unit.Test.GenresTest
             var db = new EFInMemoryDatabase();
             _context = db.CreateDataContext<EFDataContext>();
             _readContext = db.CreateDataContext<EFDataContext>();
-            _sut = GenreServiceFactory.Create(_context);
+            _sut = GenreManageServiceFactory.Create(_context);
         }
         [Fact]
-        public async Task Get_gets_all_Genre_properly()
+        public async Task Get_gets_all_genre_manage_properly()
         {
             var genre = new GenreBuilder().Build();
             _context.Save(genre);
@@ -35,7 +35,7 @@ namespace FilmClub.Services.Unit.Test.GenresTest
 
         }
         [Fact]
-        public async Task Get_Gets_Genre_properly_with_filter()
+        public async Task Get_Gets_Genre_manage_properly_with_filter()
         {
             var genre = new GenreBuilder().Build();
             _context.Save(genre);
@@ -47,12 +47,12 @@ namespace FilmClub.Services.Unit.Test.GenresTest
 
             var filter = GenreFilterDtoFactory.Create(genre2.Title);
 
-           var actual= await _sut.Get(filter);
+            var actual = await _sut.Get(filter);
 
-           
-           actual.Count.Should().Be(1); 
+
+            actual.Count.Should().Be(1);
             actual.Single().Title.Should().Be(genre2.Title);
-            
+
 
         }
 

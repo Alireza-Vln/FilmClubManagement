@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\amirv\\OneDrive\\Desktop\\Alireza Code\\FilmClub\\FilmClubManagement\\FilmClub.RestApi\\FilmClub.RestApi.csproj": {}
+    "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.RestApi\\FilmClub.RestApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\amirv\\OneDrive\\Desktop\\Alireza Code\\FilmClub\\FilmClubManagement\\FilmClub.Cantracts\\FilmClubs.Contracts.csproj": {
+    "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Cantracts\\FilmClubs.Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\amirv\\OneDrive\\Desktop\\Alireza Code\\FilmClub\\FilmClubManagement\\FilmClub.Cantracts\\FilmClubs.Contracts.csproj",
+        "projectUniqueName": "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Cantracts\\FilmClubs.Contracts.csproj",
         "projectName": "FilmClubs.Contracts",
-        "projectPath": "C:\\Users\\amirv\\OneDrive\\Desktop\\Alireza Code\\FilmClub\\FilmClubManagement\\FilmClub.Cantracts\\FilmClubs.Contracts.csproj",
-        "packagesPath": "C:\\Users\\amirv\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\amirv\\OneDrive\\Desktop\\Alireza Code\\FilmClub\\FilmClubManagement\\FilmClub.Cantracts\\obj\\",
+        "projectPath": "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Cantracts\\FilmClubs.Contracts.csproj",
+        "packagesPath": "C:\\Users\\welldone\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Cantracts\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\amirv\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\welldone\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -50,26 +50,40 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.22, 6.0.22]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.22, 6.0.22]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.22, 6.0.22]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\amirv\\OneDrive\\Desktop\\Alireza Code\\FilmClub\\FilmClubManagement\\FilmClub.Entities\\FilmClub.Entities.csproj": {
+    "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Entities\\FilmClub.Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\amirv\\OneDrive\\Desktop\\Alireza Code\\FilmClub\\FilmClubManagement\\FilmClub.Entities\\FilmClub.Entities.csproj",
+        "projectUniqueName": "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Entities\\FilmClub.Entities.csproj",
         "projectName": "FilmClub.Entities",
-        "projectPath": "C:\\Users\\amirv\\OneDrive\\Desktop\\Alireza Code\\FilmClub\\FilmClubManagement\\FilmClub.Entities\\FilmClub.Entities.csproj",
-        "packagesPath": "C:\\Users\\amirv\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\amirv\\OneDrive\\Desktop\\Alireza Code\\FilmClub\\FilmClubManagement\\FilmClub.Entities\\obj\\",
+        "projectPath": "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Entities\\FilmClub.Entities.csproj",
+        "packagesPath": "C:\\Users\\welldone\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\amirv\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\welldone\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -105,26 +119,40 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.22, 6.0.22]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.22, 6.0.22]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.22, 6.0.22]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\amirv\\OneDrive\\Desktop\\Alireza Code\\FilmClub\\FilmClubManagement\\FilmClub.Persistence.EF\\FilmClub.Persistence.EF.csproj": {
+    "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Persistence.EF\\FilmClub.Persistence.EF.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\amirv\\OneDrive\\Desktop\\Alireza Code\\FilmClub\\FilmClubManagement\\FilmClub.Persistence.EF\\FilmClub.Persistence.EF.csproj",
+        "projectUniqueName": "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Persistence.EF\\FilmClub.Persistence.EF.csproj",
         "projectName": "FilmClub.Persistence.EF",
-        "projectPath": "C:\\Users\\amirv\\OneDrive\\Desktop\\Alireza Code\\FilmClub\\FilmClubManagement\\FilmClub.Persistence.EF\\FilmClub.Persistence.EF.csproj",
-        "packagesPath": "C:\\Users\\amirv\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\amirv\\OneDrive\\Desktop\\Alireza Code\\FilmClub\\FilmClubManagement\\FilmClub.Persistence.EF\\obj\\",
+        "projectPath": "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Persistence.EF\\FilmClub.Persistence.EF.csproj",
+        "packagesPath": "C:\\Users\\welldone\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Persistence.EF\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\amirv\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\welldone\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -138,11 +166,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\amirv\\OneDrive\\Desktop\\Alireza Code\\FilmClub\\FilmClubManagement\\FilmClub.Cantracts\\FilmClubs.Contracts.csproj": {
-                "projectPath": "C:\\Users\\amirv\\OneDrive\\Desktop\\Alireza Code\\FilmClub\\FilmClubManagement\\FilmClub.Cantracts\\FilmClubs.Contracts.csproj"
+              "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Cantracts\\FilmClubs.Contracts.csproj": {
+                "projectPath": "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Cantracts\\FilmClubs.Contracts.csproj"
               },
-              "C:\\Users\\amirv\\OneDrive\\Desktop\\Alireza Code\\FilmClub\\FilmClubManagement\\FilmClub.Services\\FilmClub.Services.csproj": {
-                "projectPath": "C:\\Users\\amirv\\OneDrive\\Desktop\\Alireza Code\\FilmClub\\FilmClubManagement\\FilmClub.Services\\FilmClub.Services.csproj"
+              "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Services\\FilmClub.Services.csproj": {
+                "projectPath": "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Services\\FilmClub.Services.csproj"
               }
             }
           }
@@ -177,26 +205,40 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.22, 6.0.22]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.22, 6.0.22]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.22, 6.0.22]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\amirv\\OneDrive\\Desktop\\Alireza Code\\FilmClub\\FilmClubManagement\\FilmClub.RestApi\\FilmClub.RestApi.csproj": {
+    "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.RestApi\\FilmClub.RestApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\amirv\\OneDrive\\Desktop\\Alireza Code\\FilmClub\\FilmClubManagement\\FilmClub.RestApi\\FilmClub.RestApi.csproj",
+        "projectUniqueName": "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.RestApi\\FilmClub.RestApi.csproj",
         "projectName": "FilmClub.RestApi",
-        "projectPath": "C:\\Users\\amirv\\OneDrive\\Desktop\\Alireza Code\\FilmClub\\FilmClubManagement\\FilmClub.RestApi\\FilmClub.RestApi.csproj",
-        "packagesPath": "C:\\Users\\amirv\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\amirv\\OneDrive\\Desktop\\Alireza Code\\FilmClub\\FilmClubManagement\\FilmClub.RestApi\\obj\\",
+        "projectPath": "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.RestApi\\FilmClub.RestApi.csproj",
+        "packagesPath": "C:\\Users\\welldone\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.RestApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\amirv\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\welldone\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -204,18 +246,17 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\amirv\\OneDrive\\Desktop\\Alireza Code\\FilmClub\\FilmClubManagement\\FilmClub.Cantracts\\FilmClubs.Contracts.csproj": {
-                "projectPath": "C:\\Users\\amirv\\OneDrive\\Desktop\\Alireza Code\\FilmClub\\FilmClubManagement\\FilmClub.Cantracts\\FilmClubs.Contracts.csproj"
+              "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Cantracts\\FilmClubs.Contracts.csproj": {
+                "projectPath": "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Cantracts\\FilmClubs.Contracts.csproj"
               },
-              "C:\\Users\\amirv\\OneDrive\\Desktop\\Alireza Code\\FilmClub\\FilmClubManagement\\FilmClub.Persistence.EF\\FilmClub.Persistence.EF.csproj": {
-                "projectPath": "C:\\Users\\amirv\\OneDrive\\Desktop\\Alireza Code\\FilmClub\\FilmClubManagement\\FilmClub.Persistence.EF\\FilmClub.Persistence.EF.csproj"
+              "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Persistence.EF\\FilmClub.Persistence.EF.csproj": {
+                "projectPath": "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Persistence.EF\\FilmClub.Persistence.EF.csproj"
               }
             }
           }
@@ -258,21 +299,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\amirv\\OneDrive\\Desktop\\Alireza Code\\FilmClub\\FilmClubManagement\\FilmClub.Services\\FilmClub.Services.csproj": {
+    "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Services\\FilmClub.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\amirv\\OneDrive\\Desktop\\Alireza Code\\FilmClub\\FilmClubManagement\\FilmClub.Services\\FilmClub.Services.csproj",
+        "projectUniqueName": "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Services\\FilmClub.Services.csproj",
         "projectName": "FilmClub.Services",
-        "projectPath": "C:\\Users\\amirv\\OneDrive\\Desktop\\Alireza Code\\FilmClub\\FilmClubManagement\\FilmClub.Services\\FilmClub.Services.csproj",
-        "packagesPath": "C:\\Users\\amirv\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\amirv\\OneDrive\\Desktop\\Alireza Code\\FilmClub\\FilmClubManagement\\FilmClub.Services\\obj\\",
+        "projectPath": "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Services\\FilmClub.Services.csproj",
+        "packagesPath": "C:\\Users\\welldone\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Services\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\amirv\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\welldone\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -286,11 +327,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\amirv\\OneDrive\\Desktop\\Alireza Code\\FilmClub\\FilmClubManagement\\FilmClub.Cantracts\\FilmClubs.Contracts.csproj": {
-                "projectPath": "C:\\Users\\amirv\\OneDrive\\Desktop\\Alireza Code\\FilmClub\\FilmClubManagement\\FilmClub.Cantracts\\FilmClubs.Contracts.csproj"
+              "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Cantracts\\FilmClubs.Contracts.csproj": {
+                "projectPath": "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Cantracts\\FilmClubs.Contracts.csproj"
               },
-              "C:\\Users\\amirv\\OneDrive\\Desktop\\Alireza Code\\FilmClub\\FilmClubManagement\\FilmClub.Entities\\FilmClub.Entities.csproj": {
-                "projectPath": "C:\\Users\\amirv\\OneDrive\\Desktop\\Alireza Code\\FilmClub\\FilmClubManagement\\FilmClub.Entities\\FilmClub.Entities.csproj"
+              "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Entities\\FilmClub.Entities.csproj": {
+                "projectPath": "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Entities\\FilmClub.Entities.csproj"
               }
             }
           }
@@ -315,12 +356,26 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.22, 6.0.22]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.22, 6.0.22]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.22, 6.0.22]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

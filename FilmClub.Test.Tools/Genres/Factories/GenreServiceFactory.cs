@@ -1,19 +1,15 @@
 ﻿using FilmClubManagement.Persistance.EF;
 using FilmClubManagement.Persistance.EF.Genres;
-using FilmClub.Services.Genres;
-using FilmClub.Services.Genres.Cantracts;
-using FilmClubManagement.Persistance.EF.Films;
 
-namespace FilmClub.Test.Tools.Genres.Factories
+namespace FilmClub.Services.Unit.Test.GenresTest.GenreTests
 {
     public class GenreServiceFactory
     {
-        public  static GenreManageService Create(EFDataContext context)
+        public static GenreService Create(EFDataContext context)
         {
-            return new  GenreManageAppService(new EFGenreRepository(context),
-                new EFUnitOfWork(context),
-                new EFFilmRepository(context));
+            return new GenreAppService(new EFGenreRepository(context),
+                new EFUnitOfWork(context));
+               
         }
-       
     }
 }

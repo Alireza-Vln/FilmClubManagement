@@ -6,7 +6,7 @@ using FilmClub.Test.Tools.Infrastructure.DatabaseConfig.Unit;
 using FilmClub.Services.Genres.Cantracts.Exceptoins;
 using FilmClubManagement.Persistance.EF;
 
-namespace FilmClub.Services.Unit.Test.GenresTest
+namespace FilmClub.Services.Unit.Test.GenresTest.GenreManageTest
 {
     public class UpdateGenreManageServiceTests
     {
@@ -19,7 +19,7 @@ namespace FilmClub.Services.Unit.Test.GenresTest
             var db = new EFInMemoryDatabase();
             _context = db.CreateDataContext<EFDataContext>();
             _readContext = db.CreateDataContext<EFDataContext>();
-            _sut = GenreServiceFactory.Create(_context);
+            _sut = GenreManageServiceFactory.Create(_context);
         }
 
         [Fact]
@@ -39,13 +39,13 @@ namespace FilmClub.Services.Unit.Test.GenresTest
         public async Task Thorw_update_genre_if_gener_is_null_exception()
         {
             var dummyId = 1;
-            var dto=UpdateGenreManageDtoFactory.Create();
+            var dto = UpdateGenreManageDtoFactory.Create();
 
             var actual = () => _sut.Update(dummyId, dto);
 
-         await actual.Should().ThrowExactlyAsync<ThrowUpdateGenreIsNullException>();
+            await actual.Should().ThrowExactlyAsync<ThrowUpdateGenreIsNullException>();
 
-            
+
         }
     }
 }

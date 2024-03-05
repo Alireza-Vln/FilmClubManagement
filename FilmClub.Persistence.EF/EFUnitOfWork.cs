@@ -1,4 +1,4 @@
-﻿using FilmClubs.Contracts;
+﻿using FilmClubs.Contracts.Interfaces;
 
 namespace FilmClubManagement.Persistance.EF
 {

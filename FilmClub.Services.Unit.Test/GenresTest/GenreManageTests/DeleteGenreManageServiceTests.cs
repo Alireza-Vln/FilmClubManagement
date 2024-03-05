@@ -6,7 +6,7 @@ using FilmClub.Test.Tools.Genres.Factories;
 using FilmClub.Test.Tools.Infrastructure.DatabaseConfig.Unit;
 using FluentAssertions;
 
-namespace FilmClub.Services.Unit.Test.GenresTest
+namespace FilmClub.Services.Unit.Test.GenresTest.GenreManageTest
 {
     public class DeleteGenreManageServiceTests
     {
@@ -19,7 +19,7 @@ namespace FilmClub.Services.Unit.Test.GenresTest
             var db = new EFInMemoryDatabase();
             _context = db.CreateDataContext<EFDataContext>();
             _readContext = db.CreateDataContext<EFDataContext>();
-            _sut = GenreServiceFactory.Create(_context);
+            _sut = GenreManageServiceFactory.Create(_context);
         }
 
         [Fact]
@@ -28,7 +28,7 @@ namespace FilmClub.Services.Unit.Test.GenresTest
             var genre = new GenreBuilder().Build();
             _context.Save(genre);
 
-           await  _sut.Delete(genre.Id);
+            await _sut.Delete(genre.Id);
 
             var actual = _readContext.Genres.FirstOrDefault(_ => _.Id == genre.Id);
             actual.Should().BeNull();
@@ -39,9 +39,9 @@ namespace FilmClub.Services.Unit.Test.GenresTest
         {
             var dummyId = 1;
 
-           var actual=()=> _sut.Delete(dummyId);
+            var actual = () => _sut.Delete(dummyId);
 
-           await actual.Should().ThrowExactlyAsync<ThrowDeleteGenreIsNullException>();
+            await actual.Should().ThrowExactlyAsync<ThrowDeleteGenreIsNullException>();
 
         }
         [Fact]
@@ -52,13 +52,13 @@ namespace FilmClub.Services.Unit.Test.GenresTest
             _context.Save(genre);
             var film = new FilmBuilder().WithGenreId(genre.Id).Build();
             _context.Save(film);
+
             var action = () => _sut.Delete(genre.Id);
 
-            var actual = _readContext.Films.FirstOrDefault(_ => _.GenreId == genre.Id);
             await action.Should().ThrowExactlyAsync<ThrowDeleteGenreIfFilmIsNotNullException>();
 
 
 
         }
-}
+    }
 }

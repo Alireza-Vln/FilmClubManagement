@@ -1,5 +1,6 @@
 ﻿using FilmClub.Entities.Genres;
 using FilmClub.Services.Genres.Cantracts.Dtos;
+using FilmClub.Services.Unit.Test.GenresTest.GenreTests;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,7 +13,8 @@ namespace FilmClub.Services.Genres.Cantracts
     {
         Task Add(Genre genre);
         Genre? FindGenreById(int id);
-        List<GetGenreManageDto> Get(GenreFilterDto? filterDto);
+        List<GetGenreManageDto> GetAll(GenreFilterDto? filterDto);
+        List<GetGenreDto> Get(GenreFilterDto? filterDto);
         void Remove(Genre? genre);
     }
 }

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FilmClubs.Contracts
+namespace FilmClubs.Contracts.Interfaces
 {
     public interface UnitOfWork
     {

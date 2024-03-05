@@ -3,7 +3,7 @@ using FilmClub.Services.Films.Contracts;
 using FilmClub.Services.Films.Contracts.Dtos;
 using FilmClub.Services.Genres.Cantracts;
 using FilmClub.Services.Unit.Test.FilmsTest;
-using FilmClubs.Contracts;
+using FilmClubs.Contracts.Interfaces;
 
 namespace FilmClub.Services.Films
 {

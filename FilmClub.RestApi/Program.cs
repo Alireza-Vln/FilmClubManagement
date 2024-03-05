@@ -2,10 +2,11 @@ using FilmClub.Services.Films;
 using FilmClub.Services.Films.Contracts;
 using FilmClub.Services.Genres;
 using FilmClub.Services.Genres.Cantracts;
+using FilmClub.Services.Unit.Test.GenresTest.GenreTests;
 using FilmClubManagement.Persistance.EF;
 using FilmClubManagement.Persistance.EF.Films;
 using FilmClubManagement.Persistance.EF.Genres;
-using FilmClubs.Contracts;
+using FilmClubs.Contracts.Interfaces;
 using Microsoft.EntityFrameworkCore;
 var builder = WebApplication.CreateBuilder(args);
 
@@ -23,6 +24,7 @@ builder.Services.AddDbContext<EFDataContext>(
 
 builder.Services.AddScoped<UnitOfWork, EFUnitOfWork>();
 builder.Services.AddScoped<GenreManageService, GenreManageAppService>();
+builder.Services.AddScoped<GenreService, GenreAppService>();
 builder.Services.AddScoped<GenreRepository,EFGenreRepository>();
 builder.Services.AddScoped<FilmRepository, EFFilmRepository>();
 builder.Services.AddScoped<FilmService, FilmAppService>();

@@ -3,7 +3,7 @@ using FilmClub.Services.Films.Contracts;
 using FilmClub.Services.Genres.Cantracts;
 using FilmClub.Services.Genres.Cantracts.Dtos;
 using FilmClub.Services.Genres.Cantracts.Exceptoins;
-using FilmClubs.Contracts;
+using FilmClubs.Contracts.Interfaces;
 
 namespace FilmClub.Services.Genres
 {
@@ -46,7 +46,7 @@ namespace FilmClub.Services.Genres
 
         public async Task<List<GetGenreManageDto>> Get(GenreFilterDto? filter)
         {
-            return  _repository.Get(filter);
+            return  _repository.GetAll(filter);
         }
 
         public async Task Update(int id, UpdateGenreManageDto dto)
