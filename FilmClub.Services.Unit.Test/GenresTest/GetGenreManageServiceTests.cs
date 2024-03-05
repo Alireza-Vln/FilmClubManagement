@@ -21,7 +21,21 @@ namespace FilmClub.Services.Unit.Test.GenresTest
             _sut = GenreServiceFactory.Create(_context);
         }
         [Fact]
-        public async Task Get_Gets_Genre_properly()
+        public async Task Get_gets_all_Genre_properly()
+        {
+            var genre = new GenreBuilder().Build();
+            _context.Save(genre);
+            var filter = GenreFilterDtoFactory.Create();
+
+            var actual = await _sut.Get(filter);
+
+            actual.Single().Id.Should().Be(genre.Id);
+            actual.Single().Title.Should().Be(genre.Title);
+            actual.Single().Rate.Should().Be(genre.Rate);
+
+        }
+        [Fact]
+        public async Task Get_Gets_Genre_properly_with_filter()
         {
             var genre = new GenreBuilder().Build();
             _context.Save(genre);
@@ -33,12 +47,12 @@ namespace FilmClub.Services.Unit.Test.GenresTest
 
             var filter = GenreFilterDtoFactory.Create(genre2.Title);
 
-            await _sut.Get(filter);
+           var actual= await _sut.Get(filter);
 
-            var actual = _readContext.Genres.Single(_=>_.Id==genre2.Id);
-            actual.Id.Should().Be(genre2.Id);
-            actual.Title.Should().Be(genre2.Title);
-            actual.Rate.Should().Be(genre2.Rate);    
+           
+           actual.Count.Should().Be(1); 
+            actual.Single().Title.Should().Be(genre2.Title);
+            
 
         }
 

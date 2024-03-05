@@ -12,6 +12,6 @@
         public int Duration { get; set; }
         public int Count { get; set; }
         public int Rate { get; set; }
-        public string GenreName { get; set; }
+        public string? GenreName { get; set; }
     }
 }

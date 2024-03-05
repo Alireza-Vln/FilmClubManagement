@@ -5,13 +5,13 @@
         public static FilmFilterDto Create
             (string? name = null,
             string? director = null,
-            string? genre = null)
+            string? genreName = null)
         {
             return new FilmFilterDto
             {
                 Name = name ?? "dummy-name",
                 Director = director ?? "dummy-director",
-                GenreName = genre
+                GenreName = genreName
             };
         }
 

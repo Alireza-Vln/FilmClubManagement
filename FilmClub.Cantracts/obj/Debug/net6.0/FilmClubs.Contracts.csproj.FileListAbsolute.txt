@@ -9,3 +9,15 @@ C:\Users\welldone\Desktop\Alireza\FilmClubManagement\FilmClub.Cantracts\obj\Debu
 C:\Users\welldone\Desktop\Alireza\FilmClubManagement\FilmClub.Cantracts\obj\Debug\net6.0\refint\FilmClubs.Contracts.dll
 C:\Users\welldone\Desktop\Alireza\FilmClubManagement\FilmClub.Cantracts\obj\Debug\net6.0\FilmClubs.Contracts.pdb
 C:\Users\welldone\Desktop\Alireza\FilmClubManagement\FilmClub.Cantracts\obj\Debug\net6.0\ref\FilmClubs.Contracts.dll
+C:\Users\amirv\OneDrive\Desktop\Alireza Code\FilmClub\FilmClubManagement\FilmClub.Cantracts\bin\Debug\net6.0\FilmClubs.Contracts.deps.json
+C:\Users\amirv\OneDrive\Desktop\Alireza Code\FilmClub\FilmClubManagement\FilmClub.Cantracts\bin\Debug\net6.0\FilmClubs.Contracts.dll
+C:\Users\amirv\OneDrive\Desktop\Alireza Code\FilmClub\FilmClubManagement\FilmClub.Cantracts\bin\Debug\net6.0\FilmClubs.Contracts.pdb
+C:\Users\amirv\OneDrive\Desktop\Alireza Code\FilmClub\FilmClubManagement\FilmClub.Cantracts\obj\Debug\net6.0\FilmClubs.Contracts.csproj.AssemblyReference.cache
+C:\Users\amirv\OneDrive\Desktop\Alireza Code\FilmClub\FilmClubManagement\FilmClub.Cantracts\obj\Debug\net6.0\FilmClubs.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\amirv\OneDrive\Desktop\Alireza Code\FilmClub\FilmClubManagement\FilmClub.Cantracts\obj\Debug\net6.0\FilmClubs.Contracts.AssemblyInfoInputs.cache
+C:\Users\amirv\OneDrive\Desktop\Alireza Code\FilmClub\FilmClubManagement\FilmClub.Cantracts\obj\Debug\net6.0\FilmClubs.Contracts.AssemblyInfo.cs
+C:\Users\amirv\OneDrive\Desktop\Alireza Code\FilmClub\FilmClubManagement\FilmClub.Cantracts\obj\Debug\net6.0\FilmClubs.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\amirv\OneDrive\Desktop\Alireza Code\FilmClub\FilmClubManagement\FilmClub.Cantracts\obj\Debug\net6.0\FilmClubs.Contracts.dll
+C:\Users\amirv\OneDrive\Desktop\Alireza Code\FilmClub\FilmClubManagement\FilmClub.Cantracts\obj\Debug\net6.0\refint\FilmClubs.Contracts.dll
+C:\Users\amirv\OneDrive\Desktop\Alireza Code\FilmClub\FilmClubManagement\FilmClub.Cantracts\obj\Debug\net6.0\FilmClubs.Contracts.pdb
+C:\Users\amirv\OneDrive\Desktop\Alireza Code\FilmClub\FilmClubManagement\FilmClub.Cantracts\obj\Debug\net6.0\ref\FilmClubs.Contracts.dll

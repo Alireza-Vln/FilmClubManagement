@@ -31,6 +31,11 @@ namespace FilmClub.Services.Unit.Test.GenresTest
             _film.GenreId= genreId;
             return this;
         }
+        public FilmBuilder WithDirector(string director)
+        {
+            _film.Director = director;
+            return this;
+        }
 
         public Film Build() 
         {

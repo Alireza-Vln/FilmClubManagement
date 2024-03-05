@@ -1,4 +1,5 @@
 ﻿using FilmClub.Entities.Films;
+using FilmClub.Entities.Genres;
 using FilmClub.Services.Films.Contracts;
 using FilmClub.Services.Films.Contracts.Dtos;
 using FilmClub.Services.Unit.Test.FilmsTest;
@@ -9,10 +10,12 @@ namespace FilmClubManagement.Persistance.EF.Films
     public class EFFilmRepository : FilmRepository
     {
         private readonly DbSet<Film> _Film;
+        
 
         public EFFilmRepository(EFDataContext context)
         {
             _Film = context.Films;
+            
         }
 
         public void Add(Film film)
@@ -40,21 +43,22 @@ namespace FilmClubManagement.Persistance.EF.Films
                 PenaltyRate = _.PenaltyRate,
                 Poblish = _.Poblish,
                 Rate = _.Rate,
-                GenreName = _.Genre.Title,
+                GenreName = _.Genre.Title
             });
-            if((filter.Name != null) )
+            if (filter.Director != null)
+            {
+                film = film.Where(_ => _.Director == filter.Director);
+
+            }
+            if (filter.Name != null)
             {
                 film=film.Where(_=>_.Name == filter.Name);
 
             }
-            if ((filter.Director != null))
+           
+            if (filter.GenreName != null)
             {
-                film=film.Where(_=>_.Director == filter.Director);
-
-            }
-            if ((filter.GenreName != null))
-            {
-                film = film.Where(_ => _.GenreName == filter.GenreName);
+                film =film. Where(_ => _.GenreName == filter.GenreName);
 
             };
             return film.ToList();
