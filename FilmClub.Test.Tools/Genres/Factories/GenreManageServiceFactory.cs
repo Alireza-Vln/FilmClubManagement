@@ -6,7 +6,7 @@ using FilmClubManagement.Persistance.EF.Films;
 
 namespace FilmClub.Test.Tools.Genres.Factories
 {
-    public class GenreManageServiceFactory
+    public static class GenreManageServiceFactory
     {
         public  static GenreManageService Create(EFDataContext context)
         {

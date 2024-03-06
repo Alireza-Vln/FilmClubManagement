@@ -3,6 +3,7 @@ using FilmClub.Services.Films.Contracts;
 using FilmClub.Services.Genres;
 using FilmClub.Services.Genres.Cantracts;
 using FilmClub.Services.Unit.Test.GenresTest.GenreTests;
+using FilmClub.Services.Unit.Test.UsersTest;
 using FilmClubManagement.Persistance.EF;
 using FilmClubManagement.Persistance.EF.Films;
 using FilmClubManagement.Persistance.EF.Genres;
@@ -28,6 +29,8 @@ builder.Services.AddScoped<GenreService, GenreAppService>();
 builder.Services.AddScoped<GenreRepository,EFGenreRepository>();
 builder.Services.AddScoped<FilmRepository, EFFilmRepository>();
 builder.Services.AddScoped<FilmManageService, FilmManageAppService>();
+builder.Services.AddScoped<UserRepository,EFUserRepository>();
+builder.Services.AddScoped<UserService, UserAppService>();
 
 var app = builder.Build();
 

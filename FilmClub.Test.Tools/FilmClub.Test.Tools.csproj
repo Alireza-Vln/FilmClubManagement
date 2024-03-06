@@ -8,6 +8,7 @@
 
 	<ItemGroup>
 		<Folder Include="Infrastructure\DatabaseConfig\" />
+		<Folder Include="Users\Builders\" />
 	</ItemGroup>
 
 	<ItemGroup>

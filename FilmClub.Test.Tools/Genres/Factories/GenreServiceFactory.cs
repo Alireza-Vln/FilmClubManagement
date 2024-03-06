@@ -3,7 +3,7 @@ using FilmClubManagement.Persistance.EF.Genres;
 
 namespace FilmClub.Services.Unit.Test.GenresTest.GenreTests
 {
-    public class GenreServiceFactory
+    public static class GenreServiceFactory
     {
         public static GenreService Create(EFDataContext context)
         {

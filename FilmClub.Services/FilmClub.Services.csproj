@@ -11,4 +11,8 @@
     <ProjectReference Include="..\FilmClub.Entities\FilmClub.Entities.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Users\Contracts\Exceptoins\" />
+  </ItemGroup>
+
 </Project>
