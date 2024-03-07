@@ -11,17 +11,13 @@ using System.Threading.Tasks;
 
 namespace FilmClub.Services.Unit.Test.UsersTest
 {
-    public class AddUserServiceTests
+    public class AddUserServiceTests:BusinessUnitTest
     {
         private readonly UserService _sut;
-        private readonly EFDataContext _context;
-        private readonly EFDataContext _readContext;
         public AddUserServiceTests()
         {
-            var db = new EFInMemoryDatabase();
-            _context = db.CreateDataContext<EFDataContext>();
-            _readContext = db.CreateDataContext<EFDataContext>();
-            _sut = UserServiceFactory.Create(_context);
+           
+            _sut = UserServiceFactory.Create(SetupContext);
         }
 
         [Fact]
@@ -31,7 +27,7 @@ namespace FilmClub.Services.Unit.Test.UsersTest
 
             await _sut.Add(dto);
 
-            var actual = _readContext.Users.Single();
+            var actual = ReadContext.Users.Single();
             actual.FirstName.Should().Be(dto.FirstName);
             actual.LastName.Should().Be(dto.LastName);
             actual.PhoneNumber.Should().Be(dto.PhoneNumber);

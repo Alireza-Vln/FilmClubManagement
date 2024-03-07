@@ -16,26 +16,22 @@ using Xunit;
 
 namespace FilmClub.Services.Unit.Test.FilmsTest.FilmManageTests
 {
-    public class GetFilmManageServiceTests
+    public class GetFilmManageServiceTests:BusinessUnitTest
     {
-        readonly EFDataContext _context;
-        readonly EFDataContext _readContext;
         readonly FilmManageService _sut;
 
         public GetFilmManageServiceTests()
         {
-            var db = new EFInMemoryDatabase();
-            _context = db.CreateDataContext<EFDataContext>();
-            _readContext = db.CreateDataContext<EFDataContext>();
-            _sut = FilmManageServiceFactory.Create(_context);
+         
+            _sut = FilmManageServiceFactory.Create(SetupContext);
         }
         [Fact]
         public async Task Get_gets_all_film_properly()
         {
             var genre = new GenreBuilder().Build();
             var film = new FilmBuilder().WithGenreId(genre.Id).Build();
-            _context.Save(genre);
-            _context.Save(film);
+            DbContext.Save(genre);
+            DbContext.Save(film);
             var filter = FilmFilterDtoFactory.Create();
 
             var result = await _sut.Get(filter);
@@ -63,9 +59,9 @@ namespace FilmClub.Services.Unit.Test.FilmsTest.FilmManageTests
                 .WithGenreId(genre.Id)
                 .WithDirector("filter")
                 .Build();
-            _context.Save(genre);
-            _context.Save(film);
-            _context.Save(film2);
+            DbContext.Save(genre);
+            DbContext.Save(film);
+            DbContext.Save(film2);
             var filter = FilmFilterDtoFactory
                 .Create(film2.Name, film2.Director);
 
@@ -82,9 +78,9 @@ namespace FilmClub.Services.Unit.Test.FilmsTest.FilmManageTests
             var film = new FilmBuilder().WithGenreId(genre.Id).Build();
             var film2 = new FilmBuilder().WithGenreId(genre.Id)
                 .WithName("filter").Build();
-            _context.Save(genre);
-            _context.Save(film);
-            _context.Save(film2);
+            DbContext.Save(genre);
+            DbContext.Save(film);
+            DbContext.Save(film2);
             var filter = FilmFilterDtoFactory
                 .Create(film2.Name);
 
@@ -100,8 +96,8 @@ namespace FilmClub.Services.Unit.Test.FilmsTest.FilmManageTests
         {
             var genre = new GenreBuilder().Build();
             var film = new FilmBuilder().WithGenreId(genre.Id).Build();
-            _context.Save(genre);
-            _context.Save(film);
+            DbContext.Save(genre);
+            DbContext.Save(film);
 
             var filter = FilmFilterDtoFactory
                 .Create(film.Name, film.Director, genre.Title);

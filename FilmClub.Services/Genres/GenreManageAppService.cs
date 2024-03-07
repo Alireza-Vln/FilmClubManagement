@@ -25,7 +25,7 @@ namespace FilmClub.Services.Genres
             {
                 Title = dto.Title,
             };
-            await _repository.Add(genre);
+            _repository.Add(genre);
             await _unitOfWork.Complete();
         }
 

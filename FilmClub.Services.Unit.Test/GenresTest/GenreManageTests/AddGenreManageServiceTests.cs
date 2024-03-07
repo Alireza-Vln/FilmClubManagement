@@ -11,18 +11,14 @@ using Moq;
 
 namespace FilmClub.Services.Unit.Test.GenresTest.GenreManageTest
 {
-    public class AddGenreManageServiceTests
+    public class AddGenreManageServiceTests:BusinessUnitTest
     {
-        private readonly EFDataContext _context;
-        private readonly EFDataContext _readContext;
-        public readonly GenreManageService _sut;
+     
+      public readonly GenreManageService _sut;
 
         public AddGenreManageServiceTests()
         {
-            var db = new EFInMemoryDatabase();
-            _context = db.CreateDataContext<EFDataContext>();
-            _readContext = db.CreateDataContext<EFDataContext>();
-            _sut = GenreManageServiceFactory.Create(_context);
+            _sut = GenreManageServiceFactory.Create(SetupContext);
         }
 
 
@@ -33,7 +29,7 @@ namespace FilmClub.Services.Unit.Test.GenresTest.GenreManageTest
 
             await _sut.Add(dto);
 
-            var actual = _readContext.Genres.Single();
+            var actual = ReadContext.Genres.Single();
             actual.Title.Should().Be(dto.Title);
         }
         [Fact]

@@ -9,30 +9,27 @@ using FilmClub.Test.Tools.Infrastructure.DatabaseConfig;
 
 namespace FilmClub.Services.Unit.Test.GenresTest.GenreManageTest
 {
-    public class UpdateGenreManageServiceTests
+    public class UpdateGenreManageServiceTests:BusinessUnitTest
     {
-        private readonly EFDataContext _context;
-        private readonly EFDataContext _readContext;
+      
         public readonly GenreManageService _sut;
 
         public UpdateGenreManageServiceTests()
         {
-            var db = new EFInMemoryDatabase();
-            _context = db.CreateDataContext<EFDataContext>();
-            _readContext = db.CreateDataContext<EFDataContext>();
-            _sut = GenreManageServiceFactory.Create(_context);
+           
+            _sut = GenreManageServiceFactory.Create(SetupContext);
         }
 
         [Fact]
         public async Task Update_updates_genre_properly()
         {
             var genre = new GenreBuilder().Build();
-            _context.Save(genre);
+            DbContext.Save(genre);
             var dto = UpdateGenreManageDtoFactory.Create();
 
             await _sut.Update(genre.Id, dto);
 
-            var actual = _readContext.Genres.Single(_ => _.Id == genre.Id);
+            var actual = ReadContext.Genres.Single(_ => _.Id == genre.Id);
             actual.Title.Should().Be(dto.Title);
 
         }

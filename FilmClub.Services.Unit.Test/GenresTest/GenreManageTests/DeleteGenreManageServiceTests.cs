@@ -9,29 +9,26 @@ using FilmClub.Test.Tools.Infrastructure.DatabaseConfig;
 
 namespace FilmClub.Services.Unit.Test.GenresTest.GenreManageTest
 {
-    public class DeleteGenreManageServiceTests
+    public class DeleteGenreManageServiceTests:BusinessUnitTest
     {
-        private readonly EFDataContext _context;
-        private readonly EFDataContext _readContext;
+      
         public readonly GenreManageService _sut;
 
         public DeleteGenreManageServiceTests()
         {
-            var db = new EFInMemoryDatabase();
-            _context = db.CreateDataContext<EFDataContext>();
-            _readContext = db.CreateDataContext<EFDataContext>();
-            _sut = GenreManageServiceFactory.Create(_context);
+           
+            _sut = GenreManageServiceFactory.Create(ReadContext);
         }
 
         [Fact]
         public async Task Delete_deletes_genre_by_properly()
         {
             var genre = new GenreBuilder().Build();
-            _context.Save(genre);
+            DbContext.Save(genre);
 
             await _sut.Delete(genre.Id);
 
-            var actual = _readContext.Genres.FirstOrDefault(_ => _.Id == genre.Id);
+            var actual = ReadContext.Genres.FirstOrDefault(_ => _.Id == genre.Id);
             actual.Should().BeNull();
 
         }
@@ -50,9 +47,9 @@ namespace FilmClub.Services.Unit.Test.GenresTest.GenreManageTest
         {
 
             var genre = new GenreBuilder().Build();
-            _context.Save(genre);
+            DbContext.Save(genre);
             var film = new FilmBuilder().WithGenreId(genre.Id).Build();
-            _context.Save(film);
+            DbContext.Save(film);
 
             var action = () => _sut.Delete(genre.Id);
 

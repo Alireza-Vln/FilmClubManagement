@@ -15,30 +15,27 @@ using System.Threading.Tasks;
 
 namespace FilmClub.Services.Unit.Test.FilmsTest.FilmManageTests
 {
-    public class DeleteFilmManageServiceTests
+    public class DeleteFilmManageServiceTests:BusinessUnitTest
     {
-        readonly EFDataContext _context;
-        readonly EFDataContext _readContext;
         readonly FilmManageService _sut;
         public DeleteFilmManageServiceTests()
         {
             var db = new EFInMemoryDatabase();
-            _context = db.CreateDataContext<EFDataContext>();
-            _readContext = db.CreateDataContext<EFDataContext>();
-            _sut = FilmManageServiceFactory.Create(_context);
+       
+            _sut = FilmManageServiceFactory.Create(SetupContext);
         }
         [Fact]
         public async Task Remove_removes_film_properly()
         {
             var genre = new GenreBuilder().Build();
-            _context.Save(genre);
+            DbContext.Save(genre);
             var film = new FilmBuilder().WithGenreId(genre.Id).Build();
-            _context.Save(film);
+            DbContext.Save(film);
 
 
             await _sut.Remove(film.Id);
 
-            var actual = _readContext.Films.FirstOrDefault(_ => _.Id == film.Id);
+            var actual = ReadContext.Films.FirstOrDefault(_ => _.Id == film.Id);
 
             actual.Should().BeNull();
         }

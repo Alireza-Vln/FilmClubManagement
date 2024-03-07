@@ -8,24 +8,21 @@ using FilmClub.Test.Tools.Infrastructure.DatabaseConfig;
 
 namespace FilmClub.Services.Unit.Test.GenresTest.GenreManageTest
 {
-    public class GetGenreManageServiceTests
+    public class GetGenreManageServiceTests:BusinessUnitTest
     {
-        private readonly EFDataContext _context;
-        private readonly EFDataContext _readContext;
+       
         public readonly GenreManageService _sut;
 
         public GetGenreManageServiceTests()
         {
-            var db = new EFInMemoryDatabase();
-            _context = db.CreateDataContext<EFDataContext>();
-            _readContext = db.CreateDataContext<EFDataContext>();
-            _sut = GenreManageServiceFactory.Create(_context);
+          
+            _sut = GenreManageServiceFactory.Create(SetupContext);
         }
         [Fact]
         public async Task Get_gets_all_genre_manage_properly()
         {
             var genre = new GenreBuilder().Build();
-            _context.Save(genre);
+            DbContext.Save(genre);
             var filter = GenreFilterDtoFactory.Create();
 
             var actual = await _sut.Get(filter);
@@ -39,12 +36,12 @@ namespace FilmClub.Services.Unit.Test.GenresTest.GenreManageTest
         public async Task Get_Gets_Genre_manage_properly_with_filter()
         {
             var genre = new GenreBuilder().Build();
-            _context.Save(genre);
+            DbContext.Save(genre);
             var genre2 = new GenreBuilder().
                  WithId(2)
                 .WithTitle("filter-dummy-title")
                 .Build();
-            _context.Save(genre2);
+            DbContext.Save(genre2);
 
             var filter = GenreFilterDtoFactory.Create(genre2.Title);
 

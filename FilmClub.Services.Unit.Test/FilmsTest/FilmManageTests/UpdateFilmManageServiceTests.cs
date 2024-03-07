@@ -12,30 +12,25 @@ using FluentAssertions;
 
 namespace FilmClub.Services.Unit.Test.FilmsTest.FilmManageTests
 {
-    public class UpdateFilmManageServiceTests
-    {
-        readonly EFDataContext _context;
-        readonly EFDataContext _readContext;
+    public class UpdateFilmManageServiceTests:BusinessUnitTest
+    { 
         readonly FilmManageService _sut;
         public UpdateFilmManageServiceTests()
-        {
-            var db = new EFInMemoryDatabase();
-            _context = db.CreateDataContext<EFDataContext>();
-            _readContext = db.CreateDataContext<EFDataContext>();
-            _sut = FilmManageServiceFactory.Create(_context);
+        {   
+            _sut = FilmManageServiceFactory.Create(SetupContext);
         }
         [Fact]
         public async Task Update_update_film_properly()
         {
             var genre = new GenreBuilder().Build();
-            _context.Save(genre);
+            DbContext.Save(genre);
             var film = new FilmBuilder().Build();
-            _context.Save(film);
+            DbContext.Save(film);
             var dto = UpdateFilmDtoFactory.Create(genre.Id);
 
             await _sut.Update(film.Id, dto);
 
-            var actual = _readContext.Films.Single(_ => _.Id == film.Id);
+            var actual = ReadContext.Films.Single(_ => _.Id == film.Id);
 
             actual.Name.Should().Be(dto.Name);
             actual.Director.Should().Be(dto.Director);
@@ -53,9 +48,9 @@ namespace FilmClub.Services.Unit.Test.FilmsTest.FilmManageTests
         {
             var dummyGenreId = 154;
             var genre = new GenreBuilder().Build();
-            _context.Save(genre);
+            DbContext.Save(genre);
             var film = new FilmBuilder().WithGenreId(genre.Id).Build();
-            _context.Save(film);
+            DbContext.Save(film);
             var dto = UpdateFilmDtoFactory.Create(dummyGenreId);
 
             var actual = () => _sut.Update(film.Id, dto);
@@ -68,7 +63,7 @@ namespace FilmClub.Services.Unit.Test.FilmsTest.FilmManageTests
         {
             var dummyFilmId = 154;
             var genre = new GenreBuilder().Build();
-            _context.Save(genre);
+            DbContext.Save(genre);
             var dto = UpdateFilmDtoFactory.Create(genre.Id);
 
             var actual = () => _sut.Update(dummyFilmId, dto);
