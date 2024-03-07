@@ -1,14 +1,3 @@
-C:\Users\welldone\Desktop\Alireza\FilmClubManagement\FilmClub.Entities\bin\Debug\net6.0\FilmClub.Entities.deps.json
-C:\Users\welldone\Desktop\Alireza\FilmClubManagement\FilmClub.Entities\bin\Debug\net6.0\FilmClub.Entities.dll
-C:\Users\welldone\Desktop\Alireza\FilmClubManagement\FilmClub.Entities\bin\Debug\net6.0\FilmClub.Entities.pdb
-C:\Users\welldone\Desktop\Alireza\FilmClubManagement\FilmClub.Entities\obj\Debug\net6.0\FilmClub.Entities.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\welldone\Desktop\Alireza\FilmClubManagement\FilmClub.Entities\obj\Debug\net6.0\FilmClub.Entities.AssemblyInfoInputs.cache
-C:\Users\welldone\Desktop\Alireza\FilmClubManagement\FilmClub.Entities\obj\Debug\net6.0\FilmClub.Entities.AssemblyInfo.cs
-C:\Users\welldone\Desktop\Alireza\FilmClubManagement\FilmClub.Entities\obj\Debug\net6.0\FilmClub.Entities.csproj.CoreCompileInputs.cache
-C:\Users\welldone\Desktop\Alireza\FilmClubManagement\FilmClub.Entities\obj\Debug\net6.0\FilmClub.Entities.dll
-C:\Users\welldone\Desktop\Alireza\FilmClubManagement\FilmClub.Entities\obj\Debug\net6.0\refint\FilmClub.Entities.dll
-C:\Users\welldone\Desktop\Alireza\FilmClubManagement\FilmClub.Entities\obj\Debug\net6.0\FilmClub.Entities.pdb
-C:\Users\welldone\Desktop\Alireza\FilmClubManagement\FilmClub.Entities\obj\Debug\net6.0\ref\FilmClub.Entities.dll
 C:\Users\amirv\OneDrive\Desktop\Alireza Code\FilmClub\FilmClubManagement\FilmClub.Entities\bin\Debug\net6.0\FilmClub.Entities.deps.json
 C:\Users\amirv\OneDrive\Desktop\Alireza Code\FilmClub\FilmClubManagement\FilmClub.Entities\bin\Debug\net6.0\FilmClub.Entities.dll
 C:\Users\amirv\OneDrive\Desktop\Alireza Code\FilmClub\FilmClubManagement\FilmClub.Entities\bin\Debug\net6.0\FilmClub.Entities.pdb
@@ -21,3 +10,14 @@ C:\Users\amirv\OneDrive\Desktop\Alireza Code\FilmClub\FilmClubManagement\FilmClu
 C:\Users\amirv\OneDrive\Desktop\Alireza Code\FilmClub\FilmClubManagement\FilmClub.Entities\obj\Debug\net6.0\refint\FilmClub.Entities.dll
 C:\Users\amirv\OneDrive\Desktop\Alireza Code\FilmClub\FilmClubManagement\FilmClub.Entities\obj\Debug\net6.0\FilmClub.Entities.pdb
 C:\Users\amirv\OneDrive\Desktop\Alireza Code\FilmClub\FilmClubManagement\FilmClub.Entities\obj\Debug\net6.0\ref\FilmClub.Entities.dll
+C:\Users\welldone\Desktop\Alireza\FilmClubManagement\FilmClub.Entities\bin\Debug\net6.0\FilmClub.Entities.deps.json
+C:\Users\welldone\Desktop\Alireza\FilmClubManagement\FilmClub.Entities\bin\Debug\net6.0\FilmClub.Entities.dll
+C:\Users\welldone\Desktop\Alireza\FilmClubManagement\FilmClub.Entities\bin\Debug\net6.0\FilmClub.Entities.pdb
+C:\Users\welldone\Desktop\Alireza\FilmClubManagement\FilmClub.Entities\obj\Debug\net6.0\FilmClub.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\welldone\Desktop\Alireza\FilmClubManagement\FilmClub.Entities\obj\Debug\net6.0\FilmClub.Entities.AssemblyInfoInputs.cache
+C:\Users\welldone\Desktop\Alireza\FilmClubManagement\FilmClub.Entities\obj\Debug\net6.0\FilmClub.Entities.AssemblyInfo.cs
+C:\Users\welldone\Desktop\Alireza\FilmClubManagement\FilmClub.Entities\obj\Debug\net6.0\FilmClub.Entities.csproj.CoreCompileInputs.cache
+C:\Users\welldone\Desktop\Alireza\FilmClubManagement\FilmClub.Entities\obj\Debug\net6.0\FilmClub.Entities.dll
+C:\Users\welldone\Desktop\Alireza\FilmClubManagement\FilmClub.Entities\obj\Debug\net6.0\refint\FilmClub.Entities.dll
+C:\Users\welldone\Desktop\Alireza\FilmClubManagement\FilmClub.Entities\obj\Debug\net6.0\FilmClub.Entities.pdb
+C:\Users\welldone\Desktop\Alireza\FilmClubManagement\FilmClub.Entities\obj\Debug\net6.0\ref\FilmClub.Entities.dll

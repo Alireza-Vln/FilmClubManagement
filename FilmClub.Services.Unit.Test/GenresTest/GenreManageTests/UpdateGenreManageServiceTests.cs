@@ -5,6 +5,7 @@ using FilmClub.Services.Genres.Cantracts;
 using FilmClub.Test.Tools.Infrastructure.DatabaseConfig.Unit;
 using FilmClub.Services.Genres.Cantracts.Exceptoins;
 using FilmClubManagement.Persistance.EF;
+using FilmClub.Test.Tools.Infrastructure.DatabaseConfig;
 
 namespace FilmClub.Services.Unit.Test.GenresTest.GenreManageTest
 {

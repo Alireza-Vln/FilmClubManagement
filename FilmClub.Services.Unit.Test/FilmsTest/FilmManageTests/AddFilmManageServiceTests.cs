@@ -6,6 +6,7 @@ using FilmClub.Services.Films.Contracts;
 using FilmClubManagement.Persistance.EF;
 using System.ComponentModel.DataAnnotations;
 using FilmClub.Services.Genres.Cantracts.Exceptoins;
+using FilmClub.Test.Tools.Infrastructure.DatabaseConfig;
 
 namespace FilmClub.Services.Unit.Test.FilmsTest.FilmManageTests
 {

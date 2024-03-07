@@ -4,6 +4,7 @@ using FilmClub.Test.Tools.Genres.Factories;
 using FilmClub.Services.Genres.Cantracts;
 using FilmClub.Test.Tools.Infrastructure.DatabaseConfig.Unit;
 using FilmClubManagement.Persistance.EF;
+using FilmClub.Test.Tools.Infrastructure.DatabaseConfig;
 
 namespace FilmClub.Services.Unit.Test.GenresTest.GenreManageTest
 {

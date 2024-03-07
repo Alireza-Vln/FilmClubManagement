@@ -31,6 +31,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilmClub.Test.Tools", "Film
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilmClub.RestApi", "FilmClub.RestApi\FilmClub.RestApi.csproj", "{09DF9DFD-6FB3-4EC6-BFD9-4E1111ED4E01}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilmClub.Spec.Tests", "FilmClub.Spec.Tests\FilmClub.Spec.Tests.csproj", "{3E0C9816-AFFE-4325-B962-389A16407901}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilmClub.Infrastructure", "FilmClub.Infrastructure\FilmClub.Infrastructure.csproj", "{AC60C96C-808F-441D-8A18-EAF627F34FCB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +73,14 @@ Global
 		{09DF9DFD-6FB3-4EC6-BFD9-4E1111ED4E01}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{09DF9DFD-6FB3-4EC6-BFD9-4E1111ED4E01}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{09DF9DFD-6FB3-4EC6-BFD9-4E1111ED4E01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E0C9816-AFFE-4325-B962-389A16407901}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E0C9816-AFFE-4325-B962-389A16407901}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E0C9816-AFFE-4325-B962-389A16407901}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E0C9816-AFFE-4325-B962-389A16407901}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC60C96C-808F-441D-8A18-EAF627F34FCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC60C96C-808F-441D-8A18-EAF627F34FCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC60C96C-808F-441D-8A18-EAF627F34FCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC60C96C-808F-441D-8A18-EAF627F34FCB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -86,6 +98,8 @@ Global
 		{1AAA152D-82CB-450D-864D-681F4D48BC0F} = {AA8F49F5-5B17-42E4-BBA3-4CF232C85D5D}
 		{2C20A3A3-4CDD-463D-B50D-6A3E6541DFF7} = {AA8F49F5-5B17-42E4-BBA3-4CF232C85D5D}
 		{09DF9DFD-6FB3-4EC6-BFD9-4E1111ED4E01} = {D6E542C7-8420-4BC4-A8E6-191F826FA649}
+		{3E0C9816-AFFE-4325-B962-389A16407901} = {AA8F49F5-5B17-42E4-BBA3-4CF232C85D5D}
+		{AC60C96C-808F-441D-8A18-EAF627F34FCB} = {E4632D9D-5DB3-4B72-9A4E-37170731B69A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1BF09AEB-87C4-4426-B123-CD1BBF3F733D}

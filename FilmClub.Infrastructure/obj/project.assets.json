@@ -1,0 +1,125 @@
+{
+  "version": 3,
+  "targets": {
+    "net7.0": {
+      "FilmClub.Entities/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/FilmClub.Entities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FilmClub.Entities.dll": {}
+        }
+      },
+      "FilmClub.Services/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "FilmClub.Entities": "1.0.0",
+          "FilmClubs.Contracts": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/FilmClub.Services.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FilmClub.Services.dll": {}
+        }
+      },
+      "FilmClubs.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/FilmClubs.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FilmClubs.Contracts.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "FilmClub.Entities/1.0.0": {
+      "type": "project",
+      "path": "../FilmClub.Entities/FilmClub.Entities.csproj",
+      "msbuildProject": "../FilmClub.Entities/FilmClub.Entities.csproj"
+    },
+    "FilmClub.Services/1.0.0": {
+      "type": "project",
+      "path": "../FilmClub.Services/FilmClub.Services.csproj",
+      "msbuildProject": "../FilmClub.Services/FilmClub.Services.csproj"
+    },
+    "FilmClubs.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../FilmClub.Cantracts/FilmClubs.Contracts.csproj",
+      "msbuildProject": "../FilmClub.Cantracts/FilmClubs.Contracts.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net7.0": [
+      "FilmClub.Services >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\welldone\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Infrastructure\\FilmClub.Infrastructure.csproj",
+      "projectName": "FilmClub.Infrastructure",
+      "projectPath": "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Infrastructure\\FilmClub.Infrastructure.csproj",
+      "packagesPath": "C:\\Users\\welldone\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Infrastructure\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\welldone\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net7.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "projectReferences": {
+            "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Services\\FilmClub.Services.csproj": {
+              "projectPath": "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Services\\FilmClub.Services.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net7.0": {
+        "targetAlias": "net7.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

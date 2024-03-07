@@ -2,6 +2,7 @@
 using FilmClub.Services.Unit.Test.GenresTest;
 using FilmClub.Test.Tools.Films.Factories;
 using FilmClub.Test.Tools.Genres.Builders;
+using FilmClub.Test.Tools.Infrastructure.DatabaseConfig;
 using FilmClub.Test.Tools.Infrastructure.DatabaseConfig.Unit;
 using FilmClubManagement.Persistance.EF;
 using FluentAssertions;
