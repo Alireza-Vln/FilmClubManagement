@@ -180,6 +180,7 @@ C:\Users\amirv\OneDrive\Desktop\Alireza Code\FilmClub\FilmClubManagement\FilmClu
 C:\Users\amirv\OneDrive\Desktop\Alireza Code\FilmClub\FilmClubManagement\FilmClub.Services.Unit.Test\obj\Debug\net6.0\ref\FilmClub.Services.Unit.Test.dll
 C:\Users\welldone\Desktop\Alireza\FilmClubManagement\FilmClub.Services.Unit.Test\bin\Debug\net6.0\CoverletSourceRootsMapping_FilmClub.Services.Unit.Test
 C:\Users\welldone\Desktop\Alireza\FilmClubManagement\FilmClub.Services.Unit.Test\bin\Debug\net6.0\testhost.dll
+C:\Users\welldone\Desktop\Alireza\FilmClubManagement\FilmClub.Services.Unit.Test\bin\Debug\net6.0\appsettings.json
 C:\Users\welldone\Desktop\Alireza\FilmClubManagement\FilmClub.Services.Unit.Test\bin\Debug\net6.0\testhost.exe
 C:\Users\welldone\Desktop\Alireza\FilmClubManagement\FilmClub.Services.Unit.Test\bin\Debug\net6.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll
 C:\Users\welldone\Desktop\Alireza\FilmClubManagement\FilmClub.Services.Unit.Test\bin\Debug\net6.0\xunit.runner.reporters.netcoreapp10.dll

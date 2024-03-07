@@ -1,8 +1,7 @@
-
 using FilmClubManagement.Persistance.EF;
 using Xunit;
 
-namespace MovieClub.Tests.Tools.Infrastructure.DatabaseConfig.IntegrationTest;
+namespace FilmClub.Tests.Tools.Infrastructure.DatabaseConfig.IntegrationTest;
 
 
 [Collection(nameof(ConfigurationFixture))]

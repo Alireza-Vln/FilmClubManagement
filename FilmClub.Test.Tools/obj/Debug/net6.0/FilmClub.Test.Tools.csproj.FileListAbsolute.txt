@@ -19,6 +19,7 @@ C:\Users\amirv\OneDrive\Desktop\Alireza Code\FilmClub\FilmClubManagement\FilmClu
 C:\Users\amirv\OneDrive\Desktop\Alireza Code\FilmClub\FilmClubManagement\FilmClub.Test.Tools\obj\Debug\net6.0\refint\FilmClub.Test.Tools.dll
 C:\Users\amirv\OneDrive\Desktop\Alireza Code\FilmClub\FilmClubManagement\FilmClub.Test.Tools\obj\Debug\net6.0\FilmClub.Test.Tools.pdb
 C:\Users\amirv\OneDrive\Desktop\Alireza Code\FilmClub\FilmClubManagement\FilmClub.Test.Tools\obj\Debug\net6.0\ref\FilmClub.Test.Tools.dll
+C:\Users\welldone\Desktop\Alireza\FilmClubManagement\FilmClub.Test.Tools\bin\Debug\net6.0\appsettings.json
 C:\Users\welldone\Desktop\Alireza\FilmClubManagement\FilmClub.Test.Tools\bin\Debug\net6.0\FilmClub.Test.Tools.deps.json
 C:\Users\welldone\Desktop\Alireza\FilmClubManagement\FilmClub.Test.Tools\bin\Debug\net6.0\FilmClub.Test.Tools.dll
 C:\Users\welldone\Desktop\Alireza\FilmClubManagement\FilmClub.Test.Tools\bin\Debug\net6.0\FilmClub.Test.Tools.pdb

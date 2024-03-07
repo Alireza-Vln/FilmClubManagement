@@ -3,7 +3,7 @@
 using FilmClub.Test.Tools.Infrastructure.DatabaseConfig;
 using FilmClubManagement.Persistance.EF;
 
-namespace MovieClub.Tests.Tools.Infrastructure.DatabaseConfig.IntegrationTest;
+namespace FilmClub.Tests.Tools.Infrastructure.DatabaseConfig.IntegrationTest;
 
 public class BusinessIntegrationTest : EFDataContextDatabaseFixture
 {

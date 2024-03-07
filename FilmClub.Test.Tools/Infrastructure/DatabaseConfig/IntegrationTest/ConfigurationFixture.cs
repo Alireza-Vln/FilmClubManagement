@@ -1,7 +1,7 @@
 using Microsoft.Extensions.Configuration;
 
 
-namespace MovieClub.Tests.Tools.Infrastructure.DatabaseConfig.IntegrationTest;
+namespace FilmClub.Tests.Tools.Infrastructure.DatabaseConfig.IntegrationTest;
 
 public class ConfigurationFixture
 {
