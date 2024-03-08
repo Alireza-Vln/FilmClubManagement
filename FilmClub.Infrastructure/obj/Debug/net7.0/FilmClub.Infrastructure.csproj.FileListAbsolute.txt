@@ -17,3 +17,22 @@ C:\Users\welldone\Desktop\Alireza\FilmClubManagement\FilmClub.Infrastructure\obj
 C:\Users\welldone\Desktop\Alireza\FilmClubManagement\FilmClub.Infrastructure\obj\Debug\net7.0\refint\FilmClub.Infrastructure.dll
 C:\Users\welldone\Desktop\Alireza\FilmClubManagement\FilmClub.Infrastructure\obj\Debug\net7.0\FilmClub.Infrastructure.pdb
 C:\Users\welldone\Desktop\Alireza\FilmClubManagement\FilmClub.Infrastructure\obj\Debug\net7.0\ref\FilmClub.Infrastructure.dll
+C:\Users\amirv\OneDrive\Desktop\Alireza Code\FilmClub\FilmClubManagement\FilmClub.Infrastructure\bin\Debug\net7.0\FilmClub.Infrastructure.deps.json
+C:\Users\amirv\OneDrive\Desktop\Alireza Code\FilmClub\FilmClubManagement\FilmClub.Infrastructure\bin\Debug\net7.0\FilmClub.Infrastructure.dll
+C:\Users\amirv\OneDrive\Desktop\Alireza Code\FilmClub\FilmClubManagement\FilmClub.Infrastructure\bin\Debug\net7.0\FilmClub.Infrastructure.pdb
+C:\Users\amirv\OneDrive\Desktop\Alireza Code\FilmClub\FilmClubManagement\FilmClub.Infrastructure\bin\Debug\net7.0\FilmClub.Entities.dll
+C:\Users\amirv\OneDrive\Desktop\Alireza Code\FilmClub\FilmClubManagement\FilmClub.Infrastructure\bin\Debug\net7.0\FilmClub.Services.dll
+C:\Users\amirv\OneDrive\Desktop\Alireza Code\FilmClub\FilmClubManagement\FilmClub.Infrastructure\bin\Debug\net7.0\FilmClubs.Contracts.dll
+C:\Users\amirv\OneDrive\Desktop\Alireza Code\FilmClub\FilmClubManagement\FilmClub.Infrastructure\bin\Debug\net7.0\FilmClub.Services.pdb
+C:\Users\amirv\OneDrive\Desktop\Alireza Code\FilmClub\FilmClubManagement\FilmClub.Infrastructure\bin\Debug\net7.0\FilmClub.Entities.pdb
+C:\Users\amirv\OneDrive\Desktop\Alireza Code\FilmClub\FilmClubManagement\FilmClub.Infrastructure\bin\Debug\net7.0\FilmClubs.Contracts.pdb
+C:\Users\amirv\OneDrive\Desktop\Alireza Code\FilmClub\FilmClubManagement\FilmClub.Infrastructure\obj\Debug\net7.0\FilmClub.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\amirv\OneDrive\Desktop\Alireza Code\FilmClub\FilmClubManagement\FilmClub.Infrastructure\obj\Debug\net7.0\FilmClub.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\amirv\OneDrive\Desktop\Alireza Code\FilmClub\FilmClubManagement\FilmClub.Infrastructure\obj\Debug\net7.0\FilmClub.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\amirv\OneDrive\Desktop\Alireza Code\FilmClub\FilmClubManagement\FilmClub.Infrastructure\obj\Debug\net7.0\FilmClub.Infrastructure.AssemblyInfo.cs
+C:\Users\amirv\OneDrive\Desktop\Alireza Code\FilmClub\FilmClubManagement\FilmClub.Infrastructure\obj\Debug\net7.0\FilmClub.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\amirv\OneDrive\Desktop\Alireza Code\FilmClub\FilmClubManagement\FilmClub.Infrastructure\obj\Debug\net7.0\FilmClub.Infrastructure.csproj.CopyComplete
+C:\Users\amirv\OneDrive\Desktop\Alireza Code\FilmClub\FilmClubManagement\FilmClub.Infrastructure\obj\Debug\net7.0\FilmClub.Infrastructure.dll
+C:\Users\amirv\OneDrive\Desktop\Alireza Code\FilmClub\FilmClubManagement\FilmClub.Infrastructure\obj\Debug\net7.0\refint\FilmClub.Infrastructure.dll
+C:\Users\amirv\OneDrive\Desktop\Alireza Code\FilmClub\FilmClubManagement\FilmClub.Infrastructure\obj\Debug\net7.0\FilmClub.Infrastructure.pdb
+C:\Users\amirv\OneDrive\Desktop\Alireza Code\FilmClub\FilmClubManagement\FilmClub.Infrastructure\obj\Debug\net7.0\ref\FilmClub.Infrastructure.dll

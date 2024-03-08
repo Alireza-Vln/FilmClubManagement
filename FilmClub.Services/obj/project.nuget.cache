@@ -1,12 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hoKoNNCWIPv3eu8nQVGcpIpLn5H+BXu02tPLKgc6d8aQ6z8Q/V3tOVD2AZCEeq4ytclApUQ42ksvVPhcPTT/iA==",
+  "dgSpecHash": "mr9+pItbEhi1AxW+556m5DC3Hb7QhccZjaMRrxTokylvfVtbYIOtmLnef6gY+j/qT/gsKzO3nnSngNG8uuIuCg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Services\\FilmClub.Services.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\welldone\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.22\\microsoft.windowsdesktop.app.ref.6.0.22.nupkg.sha512",
-    "C:\\Users\\welldone\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.22\\microsoft.netcore.app.ref.6.0.22.nupkg.sha512",
-    "C:\\Users\\welldone\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.22\\microsoft.aspnetcore.app.ref.6.0.22.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Users\\amirv\\OneDrive\\Desktop\\Alireza Code\\FilmClub\\FilmClubManagement\\FilmClub.Services\\FilmClub.Services.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

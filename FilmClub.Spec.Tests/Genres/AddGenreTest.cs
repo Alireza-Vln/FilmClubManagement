@@ -37,7 +37,7 @@ namespace FilmClub.Spec.Tests.Genres
             await _sut.Add(dto);
         }
         [Then(" یک دسته بندی به عنوان اکشن در فهرست ژانرها قرار دارد ")]
-        private  void Then()
+        private void Then()
         {
             var actual = ReadContext.Genres.Single();
             actual.Title.Should().Be("اکشن");
@@ -50,6 +50,7 @@ namespace FilmClub.Spec.Tests.Genres
                 _=>When().Wait(),
                 _=>Then());
         }
+        
     
     }
 }

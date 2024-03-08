@@ -8470,19 +8470,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\welldone\\.nuget\\packages\\": {}
+    "C:\\Users\\amirv\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Spec.Tests\\FilmClub.Spec.Tests.csproj",
+      "projectUniqueName": "C:\\Users\\amirv\\OneDrive\\Desktop\\Alireza Code\\FilmClub\\FilmClubManagement\\FilmClub.Spec.Tests\\FilmClub.Spec.Tests.csproj",
       "projectName": "FilmClub.Spec.Tests",
-      "projectPath": "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Spec.Tests\\FilmClub.Spec.Tests.csproj",
-      "packagesPath": "C:\\Users\\welldone\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Spec.Tests\\obj\\",
+      "projectPath": "C:\\Users\\amirv\\OneDrive\\Desktop\\Alireza Code\\FilmClub\\FilmClubManagement\\FilmClub.Spec.Tests\\FilmClub.Spec.Tests.csproj",
+      "packagesPath": "C:\\Users\\amirv\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\amirv\\OneDrive\\Desktop\\Alireza Code\\FilmClub\\FilmClubManagement\\FilmClub.Spec.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\welldone\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\amirv\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8496,14 +8496,14 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Entities\\FilmClub.Entities.csproj": {
-              "projectPath": "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Entities\\FilmClub.Entities.csproj"
+            "C:\\Users\\amirv\\OneDrive\\Desktop\\Alireza Code\\FilmClub\\FilmClubManagement\\FilmClub.Entities\\FilmClub.Entities.csproj": {
+              "projectPath": "C:\\Users\\amirv\\OneDrive\\Desktop\\Alireza Code\\FilmClub\\FilmClubManagement\\FilmClub.Entities\\FilmClub.Entities.csproj"
             },
-            "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Infrastructure\\FilmClub.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Infrastructure\\FilmClub.Infrastructure.csproj"
+            "C:\\Users\\amirv\\OneDrive\\Desktop\\Alireza Code\\FilmClub\\FilmClubManagement\\FilmClub.Infrastructure\\FilmClub.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\amirv\\OneDrive\\Desktop\\Alireza Code\\FilmClub\\FilmClubManagement\\FilmClub.Infrastructure\\FilmClub.Infrastructure.csproj"
             },
-            "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Test.Tools\\FilmClub.Test.Tools.csproj": {
-              "projectPath": "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Test.Tools\\FilmClub.Test.Tools.csproj"
+            "C:\\Users\\amirv\\OneDrive\\Desktop\\Alireza Code\\FilmClub\\FilmClubManagement\\FilmClub.Test.Tools\\FilmClub.Test.Tools.csproj": {
+              "projectPath": "C:\\Users\\amirv\\OneDrive\\Desktop\\Alireza Code\\FilmClub\\FilmClubManagement\\FilmClub.Test.Tools\\FilmClub.Test.Tools.csproj"
             }
           }
         }
@@ -8563,7 +8563,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
       }
     }
   },

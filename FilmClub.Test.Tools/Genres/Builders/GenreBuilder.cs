@@ -9,7 +9,7 @@ namespace FilmClub.Test.Tools.Genres.Builders
         {
             _genre = new Genre()
             {
-                Id = 1,
+               
                 Title = "dummy-title",
                 Rate = 100, 
             };
@@ -17,7 +17,7 @@ namespace FilmClub.Test.Tools.Genres.Builders
         public GenreBuilder WithId(int id)
         { 
         
-        _genre.Id = id;
+           _genre.Id = id;
             return this;
         }
         public GenreBuilder WithTitle(string title)

@@ -28,7 +28,7 @@ namespace FilmClub.Services.Unit.Test.FilmsTest.FilmManageTests
         [Fact]
         public async Task Get_gets_all_film_properly()
         {
-            var genre = new GenreBuilder().Build();
+            var genre = new GenreBuilder().WithId(1).Build();
             var film = new FilmBuilder().WithGenreId(genre.Id).Build();
             DbContext.Save(genre);
             DbContext.Save(film);
@@ -51,7 +51,7 @@ namespace FilmClub.Services.Unit.Test.FilmsTest.FilmManageTests
         [Fact]
         public async Task Get_gets_film_filtered_by_director()
         {
-            var genre = new GenreBuilder()
+            var genre = new GenreBuilder().WithId(1)
                 .Build();
             var film = new FilmBuilder()
                 .WithGenreId(genre.Id).Build();
@@ -74,7 +74,7 @@ namespace FilmClub.Services.Unit.Test.FilmsTest.FilmManageTests
         [Fact]
         public async Task Get_gets_film_filtered_by_name()
         {
-            var genre = new GenreBuilder().Build();
+            var genre = new GenreBuilder().WithId(1).Build();
             var film = new FilmBuilder().WithGenreId(genre.Id).Build();
             var film2 = new FilmBuilder().WithGenreId(genre.Id)
                 .WithName("filter").Build();
@@ -94,7 +94,7 @@ namespace FilmClub.Services.Unit.Test.FilmsTest.FilmManageTests
         [Fact]
         public async Task Get_gets_film_filtered_by_genre_title()
         {
-            var genre = new GenreBuilder().Build();
+            var genre = new GenreBuilder().WithId(1).Build();
             var film = new FilmBuilder().WithGenreId(genre.Id).Build();
             DbContext.Save(genre);
             DbContext.Save(film);
