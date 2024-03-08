@@ -6,11 +6,6 @@ using FilmClub.Test.Tools.Genres.Factories;
 using FilmClub.Test.Tools.Infrastructure.DatabaseConfig;
 using FilmClub.Tests.Tools.Infrastructure.DatabaseConfig.IntegrationTest;
 using FluentAssertions;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit;
 
 namespace FilmClub.Spec.Tests.Genres
@@ -22,7 +17,7 @@ namespace FilmClub.Spec.Tests.Genres
       InOrderTo = "ژانر را تِییر دهم")]
     public class UpdateGenreTest:BusinessIntegrationTest
     {
-        readonly GenreManageService _sut;
+        private readonly GenreManageService _sut;
         private Genre _genre;
         public UpdateGenreTest()
         {
