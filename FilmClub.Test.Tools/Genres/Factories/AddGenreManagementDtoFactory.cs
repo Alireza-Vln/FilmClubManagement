@@ -4,12 +4,12 @@ namespace FilmClub.Test.Tools.Genres.Factories
 {
     public static class AddGenreManagementDtoFactory
     {
-        public static AddGenreManageDto Create()
+        public static AddGenreManageDto Create(string?title=null)
         {
             return new AddGenreManageDto()
             {
 
-                Title = "Dummy-Title",
+                Title = title??"Dummy-Title",
 
             };
         }

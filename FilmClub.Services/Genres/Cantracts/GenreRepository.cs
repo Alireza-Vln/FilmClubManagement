@@ -16,5 +16,6 @@ namespace FilmClub.Services.Genres.Cantracts
         List<GetGenreManageDto> GetAll(GenreFilterDto? filterDto);
         List<GetGenreDto> Get(GenreFilterDto? filterDto);
         void Remove(Genre? genre);
+        bool IsExistGenreName(string title);
     }
 }
