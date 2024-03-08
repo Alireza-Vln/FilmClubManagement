@@ -10,14 +10,14 @@ using FilmClub.Test.Tools.Infrastructure.DatabaseConfig;
 
 namespace FilmClub.Services.Unit.Test.FilmsTest.FilmManageTests
 {
-    public class AddFilmManageServiceTests:BusinessUnitTest
+    public class AddFilmManageServiceTests : BusinessUnitTest
     {
-     
+
         readonly FilmManageService _sut;
 
         public AddFilmManageServiceTests()
         {
-          
+
             _sut = FilmManageServiceFactory.Create(SetupContext);
         }
 
