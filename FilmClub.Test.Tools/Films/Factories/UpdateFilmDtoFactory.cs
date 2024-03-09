@@ -2,12 +2,15 @@
 {
     public static class UpdateFilmDtoFactory
     {
-        public static UpdateFilmDto Create(int genreId)
+        public static UpdateFilmDto Create(
+            int genreId,
+             string ?name=null,
+             string ? director=null)
         {
             return new UpdateFilmDto
             {
-                Name = "Update_dummy-name",
-                Director = "dummy-director",
+                Name =name??  "Update_dummy-name",
+                Director = director??"dummy-director",
                 Poblish = "dummy-polish",
                 AgeLimit = 180,
                 Count = 12,
