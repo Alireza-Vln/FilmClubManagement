@@ -4,11 +4,11 @@ namespace FilmClub.Test.Tools.Genres.Factories
 {
     public static class UpdateGenreManageDtoFactory
     {
-        public static UpdateGenreManageDto Create()
+        public static UpdateGenreManageDto Create(string? tite = null)
         {
             return new UpdateGenreManageDto()
             {
-                Title = "Update-dummy-title",
+                Title = tite??"dummy-update-genre"
             };
         }
     }

@@ -4,6 +4,7 @@ using FilmClub.Services.Genres.Cantracts;
 using FilmClub.Services.Genres.Cantracts.Dtos;
 using FilmClub.Services.Genres.Cantracts.Exceptoins;
 using FilmClubs.Contracts.Interfaces;
+using System.Runtime.Serialization;
 
 namespace FilmClub.Services.Genres
 {
@@ -21,11 +22,18 @@ namespace FilmClub.Services.Genres
 
         public async Task Add(AddGenreManageDto dto)
         {
+            
+            if (_repository.IsExistGenreName(dto.Title))
+            {
+                throw new ThrowAddGenreIsDuplicateException();
+            }
             var genre = new Genre()
             {
                 Title = dto.Title,
             };
-            _repository.Add(genre);
+          
+           
+           await _repository.Add(genre);
             await _unitOfWork.Complete();
         }
 
@@ -36,7 +44,7 @@ namespace FilmClub.Services.Genres
             {
                 throw new ThrowDeleteGenreIsNullException();
             }
-            if(_filmRepository.FindFilm(genre.Id)!=null)
+            if(_filmRepository.FindGenerFilm(genre.Id)!=null)
             {
                 throw new ThrowDeleteGenreIfFilmIsNotNullException();
             }

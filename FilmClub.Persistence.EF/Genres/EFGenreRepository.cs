@@ -61,5 +61,10 @@ namespace FilmClubManagement.Persistance.EF.Genres
             }
             return genre.ToList();
         }
+
+        public bool IsExistGenreName(string title)
+        {
+            return _genre.Any(_ => _.Title == title);
+        }
     }
 }
