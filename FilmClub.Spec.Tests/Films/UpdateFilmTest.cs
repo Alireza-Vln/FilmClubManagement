@@ -70,9 +70,7 @@ namespace FilmClub.Spec.Tests.Films
                 Rate = 10,
                 GenreId = _genre.Id,
             }; 
-
-           
-                // var dto = UpdateFilmDtoFactory.Create(_genre.Id, "ماموریت غیر ممکن", "دی پالما");
+  
                 await _sut.Update(_film.Id,dto);
         }
         [Then(" فیلم مذکور با عنوان" +
