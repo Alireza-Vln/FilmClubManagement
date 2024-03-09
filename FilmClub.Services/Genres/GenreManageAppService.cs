@@ -44,7 +44,7 @@ namespace FilmClub.Services.Genres
             {
                 throw new ThrowDeleteGenreIsNullException();
             }
-            if(_filmRepository.FindFilm(genre.Id)!=null)
+            if(_filmRepository.FindGenerFilm(genre.Id)!=null)
             {
                 throw new ThrowDeleteGenreIfFilmIsNotNullException();
             }

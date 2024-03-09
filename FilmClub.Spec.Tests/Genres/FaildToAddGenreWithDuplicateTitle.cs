@@ -23,13 +23,13 @@ namespace FilmClub.Spec.Tests.Genres
         IWantTo = "ژانر جدید اضافه کنم",
         InOrderTo = "ژانر را به فیلم ها اجاره کنم")]
 
-    public class AddGenreWithDuplicateTitle:BusinessIntegrationTest
+    public class FaildToAddGenreWithDuplicateTitle:BusinessIntegrationTest
     {
         readonly GenreManageService _sut;
          private Genre _genre;
          private AddGenreManageDto _dto;
       
-        public AddGenreWithDuplicateTitle()
+        public FaildToAddGenreWithDuplicateTitle()
         {
             _sut = GenreManageServiceFactory.Create(SetupContext);
         }

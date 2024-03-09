@@ -18,16 +18,17 @@ using Xunit;
 
 namespace FilmClub.Spec.Tests.Genres
 {
-    [Scenario("حذف شدن ژانر")]
+    [Scenario("عدم حذف شدن ژانر")]
     [Story("",
         AsA = "مدیرکلاب",
         IWantTo = "ژانر فیلم را حذف کنم",
         InOrderTo = "ان ژانر را نداشته باشم")]
-    public class DeleteGenreOfTheFilmTest :BusinessIntegrationTest
+    public class FaildToDeleteGenreOfTheFilmTest :BusinessIntegrationTest
     {
        private readonly GenreManageService _sut;
         private Genre _genre;
-        public DeleteGenreOfTheFilmTest()
+        private Func<Task> _actual;
+        public FaildToDeleteGenreOfTheFilmTest()
         {
             _sut = GenreManageServiceFactory.Create(SetupContext);
         }
@@ -40,24 +41,21 @@ namespace FilmClub.Spec.Tests.Genres
             _genre = new GenreBuilder()
                 .WithTitle("اکشن")
                 .Build();
+            DbContext.Save(_genre);
             var film = new FilmBuilder()
                 .WithGenreId(_genre.Id)
                 .Build();
-            DbContext.Save(_genre);
             DbContext.Save(film);
         }
         [When("من عنوان اکشن را حذف میکنم")]
         private async Task When()
         {
-            await _sut.Delete(_genre.Id);
-
+            _actual =() => _sut.Delete(_genre.Id);
         }
         [Then("خطایی با عنوان این ژانر دارای فیلم می باشد باید رخ دهد")]
-        private void Then()
-        {
-            var action = () => _sut.Delete(_genre.Id);
-
-            action.Should().ThrowExactlyAsync<ThrowDeleteGenreIfFilmIsNotNullException>();
+        private async Task Then()
+        {      
+           await _actual.Should().ThrowExactlyAsync<ThrowDeleteGenreIfFilmIsNotNullException>();
         }
         [Fact]
         public void Run()
@@ -65,7 +63,7 @@ namespace FilmClub.Spec.Tests.Genres
             Runner.RunScenario(
                 _ => Given(),
                 _ => When().Wait(),
-                _ => Then());
+                _ => Then().Wait());
         }
     }
 }
