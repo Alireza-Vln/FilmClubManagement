@@ -1,4 +1,5 @@
 ﻿using FilmClub.Services.Unit.Test.UsersTest;
+using FilmClub.Services.Users.Contracts.Dtos;
 using FilmClub.Spec.Tests.Users;
 using Microsoft.AspNetCore.Mvc;
 
@@ -28,6 +29,11 @@ namespace FilmClub.RestApi.Controllers.Users
         public async Task Update([FromQuery]int id, [FromBody] UpdateUserDto dto)
         {
             await _service.Update(id, dto);
+        }
+        [HttpGet]
+        public async Task<List<GetUserDto>> GetAll([FromQuery] UserFilterDto? dto)
+        {
+       return  await _service.Get(dto);
         }
     }
 }

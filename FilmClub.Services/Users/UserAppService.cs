@@ -1,4 +1,5 @@
-﻿using FilmClub.Spec.Tests.Users;
+﻿using FilmClub.Services.Users.Contracts.Dtos;
+using FilmClub.Spec.Tests.Users;
 using FilmClubs.Contracts.Interfaces;
 using static FilmClub.Services.Unit.Test.UsersTest.UserAppService;
 
@@ -30,6 +31,11 @@ namespace FilmClub.Services.Unit.Test.UsersTest
 
             _repository.Add(user);
             await _unitOfWork.Complete();
+        }
+
+        public async Task<List<GetUserDto>> Get(UserFilterDto? filterDto)
+        {
+            return _repository.GetAll(filterDto);
         }
 
         public async Task Remove(int id)

@@ -13,8 +13,9 @@ namespace FilmClub.Spec.Tests.Users
                 LastName = "dummy-last-name",
                 PhoneNumber = "1987454",
                 Address = "shz",
-                Age = new DateTime(1995, 09, 30),
+                Age = new DateTime(2000, 09, 30),
                 Gender = Gender.Male,
+                Rate = 1
             };
         }
         public UserBuilder WithName(string firstName)
