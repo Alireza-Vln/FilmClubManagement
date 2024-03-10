@@ -18,7 +18,7 @@ namespace FilmClub.Migrations
                 .WithColumn("LastName").AsString(50).NotNullable()
                 .WithColumn("PhoneNumber").AsString(50).NotNullable()
                 .WithColumn("Address").AsString(500).NotNullable()
-                .WithColumn("Age").AsInt32().NotNullable()
+                .WithColumn("Age").AsDate().NotNullable()
                 .WithColumn("Gender").AsInt32().NotNullable()
                 .WithColumn("Rate").AsDecimal();
 

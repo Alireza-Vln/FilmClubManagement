@@ -30,5 +30,16 @@ namespace FilmClub.Services.Unit.Test.UsersTest
             _repository.Add(user);
             await _unitOfWork.Complete();
         }
+
+        public async Task Remove(int id)
+        {
+           var user = _repository.FindUser(id);
+            if (user==null)
+            {
+
+            }
+            _repository.Remove(user);
+            await _unitOfWork.Complete();
+        }
     }
 }

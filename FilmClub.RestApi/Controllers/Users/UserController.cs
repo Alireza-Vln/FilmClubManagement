@@ -18,5 +18,10 @@ namespace FilmClub.RestApi.Controllers.Users
         {
             await _service.Add(dto);
         }
+        [HttpDelete]
+        public async Task Delete([FromQuery] int userId)
+        {
+            await _service.Remove(userId);
+        }
     }
 }

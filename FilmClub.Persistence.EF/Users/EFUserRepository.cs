@@ -16,5 +16,15 @@ namespace FilmClub.Services.Unit.Test.UsersTest
         {
           _users.Add(user);
         }
+
+        public User? FindUser(int id)
+        {
+            return _users.FirstOrDefault(_ => _.Id == id);
+        }
+
+        public void Remove(User user)
+        {
+            _users.Remove(user);
+        }
     }
 }

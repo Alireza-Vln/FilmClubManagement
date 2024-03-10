@@ -3,5 +3,7 @@
     public interface UserRepository
     {
         void Add(User user);
+        User? FindUser(int id);
+        void Remove(User user);
     }
 }

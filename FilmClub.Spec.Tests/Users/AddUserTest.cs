@@ -13,9 +13,9 @@ namespace FilmClub.Spec.Tests.Users
 {
     [Scenario("اضافه کردن کاربر")]
     [Story("",
-        AsA ="کاربر",
-        IWantTo ="عضو کلاب شوم",
-        InOrderTo ="فیلم اجاره کنم")]
+        AsA ="مدیر کلاب",
+        IWantTo ="کاربر اضافه کنم",
+        InOrderTo ="تا به کاربر فیلم اجاره کنم")]
     public class AddUserTest : BusinessIntegrationTest
     {
         readonly UserService _sut;
@@ -44,7 +44,7 @@ namespace FilmClub.Spec.Tests.Users
                 LastName = "ولدان",
                 PhoneNumber = "۰۹۳۸۲۶۷۶۷۴۲",
                 Address = "شیراز",
-               // Age = new DateTime(1995,09,31),
+               Age = new DateTime(1995,09,30),
                 Gender = Gender.Male,
             };
             await _sut.Add(dto);
@@ -63,7 +63,7 @@ namespace FilmClub.Spec.Tests.Users
             actual.LastName.Should().Be("ولدان");
             actual.PhoneNumber.Should().Be("۰۹۳۸۲۶۷۶۷۴۲");
             actual.Address.Should().Be("شیراز");
-          //  actual.Age.Should().Be(); 
+            actual.Age.Should().Be(new DateTime(1995, 09, 30));
             actual.Gender.Should().Be(Gender.Male);
         }
         [Fact]
