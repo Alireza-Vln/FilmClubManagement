@@ -142,3 +142,5 @@ C:\Users\welldone\Desktop\Alireza\FilmClubManagement\FilmClub.RestApi\obj\Debug\
 C:\Users\welldone\Desktop\Alireza\FilmClubManagement\FilmClub.RestApi\obj\Debug\net7.0\FilmClub.RestApi.pdb
 C:\Users\welldone\Desktop\Alireza\FilmClubManagement\FilmClub.RestApi\obj\Debug\net7.0\FilmClub.RestApi.genruntimeconfig.cache
 C:\Users\welldone\Desktop\Alireza\FilmClubManagement\FilmClub.RestApi\obj\Debug\net7.0\ref\FilmClub.RestApi.dll
+C:\Users\welldone\Desktop\Alireza\FilmClubManagement\FilmClub.RestApi\bin\Debug\net7.0\FilmClub.Infrastructure.dll
+C:\Users\welldone\Desktop\Alireza\FilmClubManagement\FilmClub.RestApi\bin\Debug\net7.0\FilmClub.Infrastructure.pdb

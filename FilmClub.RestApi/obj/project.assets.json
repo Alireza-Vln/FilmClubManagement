@@ -854,6 +854,19 @@
           "bin/placeholder/FilmClub.Entities.dll": {}
         }
       },
+      "FilmClub.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "FilmClub.Services": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/FilmClub.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FilmClub.Infrastructure.dll": {}
+        }
+      },
       "FilmClub.Persistence.EF/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -2414,6 +2427,11 @@
       "path": "../FilmClub.Entities/FilmClub.Entities.csproj",
       "msbuildProject": "../FilmClub.Entities/FilmClub.Entities.csproj"
     },
+    "FilmClub.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../FilmClub.Infrastructure/FilmClub.Infrastructure.csproj",
+      "msbuildProject": "../FilmClub.Infrastructure/FilmClub.Infrastructure.csproj"
+    },
     "FilmClub.Persistence.EF/1.0.0": {
       "type": "project",
       "path": "../FilmClub.Persistence.EF/FilmClub.Persistence.EF.csproj",
@@ -2432,6 +2450,7 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "FilmClub.Infrastructure >= 1.0.0",
       "FilmClub.Persistence.EF >= 1.0.0",
       "FilmClubs.Contracts >= 1.0.0",
       "Microsoft.AspNetCore.OpenApi >= 7.0.11",
@@ -2467,6 +2486,9 @@
           "projectReferences": {
             "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Cantracts\\FilmClubs.Contracts.csproj": {
               "projectPath": "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Cantracts\\FilmClubs.Contracts.csproj"
+            },
+            "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Infrastructure\\FilmClub.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Infrastructure\\FilmClub.Infrastructure.csproj"
             },
             "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Persistence.EF\\FilmClub.Persistence.EF.csproj": {
               "projectPath": "C:\\Users\\welldone\\Desktop\\Alireza\\FilmClubManagement\\FilmClub.Persistence.EF\\FilmClub.Persistence.EF.csproj"

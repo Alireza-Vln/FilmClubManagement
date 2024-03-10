@@ -21,6 +21,12 @@ namespace FilmClub.Services.Unit.Test.GenresTest
                 GenreId = 1,
             };  
         }
+        public FilmBuilder WithId(int id)
+        { 
+        _film.Id = id;
+            return this;
+        
+        }
         public FilmBuilder WithName(string name)
         {
             _film.Name = name;

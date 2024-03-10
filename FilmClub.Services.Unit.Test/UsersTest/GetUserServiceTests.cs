@@ -18,6 +18,7 @@ namespace FilmClub.Services.Unit.Test.UsersTest
     public class GetUserServiceTests : BusinessUnitTest
     {
          readonly  UserService _sut;
+
       
         public GetUserServiceTests()
         {
@@ -29,7 +30,7 @@ namespace FilmClub.Services.Unit.Test.UsersTest
             var user=new UserBuilder().Build();
             DbContext.Save(user);
             var filterDto = UserFilterDtoFactory.Create();
-           
+            var year = DateTime.Now.Year - user.Age.Year;
             
             var actual= await _sut.Get(filterDto);
 
@@ -40,6 +41,7 @@ namespace FilmClub.Services.Unit.Test.UsersTest
             actual.Single().Address.Should().Be(user.Address);
             actual.Single().Gender.Should().Be(user.Gender.ToString());
             actual.Single().Rate.Should().Be(user.Rate);
+            actual.Single().Age.Should().Be(year);
          
 
         }

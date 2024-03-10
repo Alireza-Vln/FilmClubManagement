@@ -1,5 +1,6 @@
 ﻿using FilmClub.Entities.Films;
 using FilmClub.Entities.Genres;
+using FilmClub.Services.Rents;
 using FilmClub.Services.Unit.Test.UsersTest;
 using Microsoft.EntityFrameworkCore;
 using System.Numerics;
@@ -22,6 +23,7 @@ namespace FilmClubManagement.Persistance.EF
         public DbSet<Genre> Genres { get; set; }
         public DbSet<Film> Films { get; set; }
         public DbSet<User> Users { get; set; }
+        public DbSet<Rent> Rents { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
