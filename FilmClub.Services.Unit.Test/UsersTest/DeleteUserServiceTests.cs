@@ -29,5 +29,14 @@ namespace FilmClub.Services.Unit.Test.UsersTest
             var actual=ReadContext.Users.FirstOrDefault(_=>_.Id==user.Id);
             actual.Should().BeNull();
         }
+        [Fact]
+        public void Throw_delete_user_if_user_is_null_exception()
+        {
+            var dummyId = 1;
+
+           var actual=()=> _sut.Remove(dummyId);
+
+            actual.Should().ThrowExactlyAsync<ThrowDeleteUserIfUserIsNullException>();
+        }
     }
 }

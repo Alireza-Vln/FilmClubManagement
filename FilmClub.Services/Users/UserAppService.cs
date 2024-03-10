@@ -1,4 +1,5 @@
-﻿using FilmClubs.Contracts.Interfaces;
+﻿using FilmClub.Spec.Tests.Users;
+using FilmClubs.Contracts.Interfaces;
 using static FilmClub.Services.Unit.Test.UsersTest.UserAppService;
 
 namespace FilmClub.Services.Unit.Test.UsersTest
@@ -36,10 +37,27 @@ namespace FilmClub.Services.Unit.Test.UsersTest
            var user = _repository.FindUser(id);
             if (user==null)
             {
-
+                throw new ThrowDeleteUserIfUserIsNullException();
             }
             _repository.Remove(user);
             await _unitOfWork.Complete();
+        }
+
+        public async Task Update(int id, UpdateUserDto dto)
+        {
+          var user= _repository.FindUser(id);
+            if (user == null)
+            {
+                throw new ThrowUpdateUserIfUserIsNullException() ;
+            }
+            user.FirstName= dto.FirstName;
+            user.LastName= dto.LastName;
+            user.Age= dto.Age;
+            user.Gender= dto.Gender;
+            user.Address= dto.Address;
+            user.PhoneNumber= dto.PhoneNumber;
+            await _unitOfWork.Complete();
+            
         }
     }
 }

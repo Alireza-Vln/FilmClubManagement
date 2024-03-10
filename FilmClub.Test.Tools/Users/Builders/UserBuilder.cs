@@ -9,10 +9,10 @@ namespace FilmClub.Spec.Tests.Users
         {
             _user = new User()
             {
-                FirstName = "علیرضا",
-                LastName = "ولدان",
-                PhoneNumber = "۰۹۳۸۲۶۷۶۷۴۲",
-                Address = "شیراز",
+                FirstName = "dummy-first-name",
+                LastName = "dummy-last-name",
+                PhoneNumber = "1987454",
+                Address = "shz",
                 Age = new DateTime(1995, 09, 30),
                 Gender = Gender.Male,
             };

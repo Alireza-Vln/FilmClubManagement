@@ -1,4 +1,5 @@
 ﻿using FilmClub.Services.Unit.Test.UsersTest;
+using FilmClub.Spec.Tests.Users;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FilmClub.RestApi.Controllers.Users
@@ -22,6 +23,11 @@ namespace FilmClub.RestApi.Controllers.Users
         public async Task Delete([FromQuery] int userId)
         {
             await _service.Remove(userId);
+        }
+        [HttpPatch]
+        public async Task Update([FromQuery]int id, [FromBody] UpdateUserDto dto)
+        {
+            await _service.Update(id, dto);
         }
     }
 }

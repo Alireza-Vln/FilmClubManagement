@@ -25,7 +25,7 @@ namespace FilmClub.Spec.Tests.Users
         {
             _sut = UserServiceFactory.Create(SetupContext);
         }
-        [Given("کاربری به اسم علیرضا ولدان " +
+        [Given("کاربری به اسم علیرضا  " +
             "فامیل ولدان " +
             "شماره تماس ۰۹۳۸۲۶۷۶۷۴۲ " +
             "ادرس شیراز" +
