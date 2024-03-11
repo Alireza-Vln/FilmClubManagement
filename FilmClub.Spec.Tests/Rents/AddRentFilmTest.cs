@@ -66,7 +66,7 @@ namespace FilmClub.Spec.Tests.Rents
             {
                 FilmId = _film.Id,
                 UserId = _user.Id,
-               // RentFilmTime = _fakeTime,
+               
             };
 
            await _sut.Add(dto);
@@ -77,7 +77,7 @@ namespace FilmClub.Spec.Tests.Rents
             var actual = ReadContext.Rents.Single();
             actual.FilmId.Should().Be(_film.Id);
             actual.UserId.Should().Be(_user.Id);
-            actual.ReturnFilmTime.Should().Be(_fakeTime);
+            actual.RentFilmTime.Should().Be(_fakeTime);
         }
         [Fact]
         public void Run()

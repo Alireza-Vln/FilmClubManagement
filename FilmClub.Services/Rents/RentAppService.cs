@@ -1,6 +1,7 @@
 ﻿using FilmClub.Entities.Films;
 using FilmClub.Services.Films.Contracts;
 using FilmClub.Services.Rents;
+using FilmClub.Services.Unit.Test.RentTest;
 using FilmClub.Services.Unit.Test.UsersTest;
 using FilmClubs.Contracts.Interfaces;
 
@@ -31,12 +32,12 @@ namespace FilmClub.Spec.Tests.Rents
             var film = _filmRepository.FindFilm(dto.FilmId);
             if (film == null)
             {
-
+                throw new ThrowAddsRentIfFilmIsNullException();
             }
             var user = _userRepository.FindUser(dto.UserId);
             if (user == null)
             {
-
+                throw new ThrowAddsRentIfUserIsNullException();
             }
 
             var rent = new Rent()
